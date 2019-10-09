@@ -4,3 +4,4 @@ Second Commit
 Third Commit
 
 100th Commit
+Jazda z konfliktami
