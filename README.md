@@ -2,3 +2,4 @@
 
 Second Commit
 Third Commit
+Jazda z konfliktami
