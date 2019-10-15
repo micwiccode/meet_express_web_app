@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="description"
+    content="Meet Express application, a new way of connecting and meeting people. Create a new evenets, take part in the events in your nearby.">
+  <meta name="keywords" content="meet, get to know, events">
+  <meta name="author" content="Michał Wiczk, Maciej Bartosik">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Meet Express</title>
+</head>
+
+<body>
+  <header>
+    <a id="title" href="index.html">
+      <div>
+        <img src="img/logo.png" width="75" height="75" alt="Logo">
+        <h1>Meet Express</h1>
+        <h6>Meet, Enjoy And Befriend</h6>
+      </div>
+    </a>
+    <nav>
+      <ul>
+        <li><a href="create.html">Create event</a></li>
+        <li><a href="findevents.html">Find event</a></li>
+        <li><a href="myevents.html">Reviw your events</li>
+        <li><a href="login.html">Login in</li>
+        <li><a href="signup.html">Sign up</a></li>
+      </ul>
+    </nav>
+  </header>
+  <hr>
+  <section>
+    <h1>Create event</h1>
+    <form action="">
+      <ol>
+        <li>
+          <label>Event name
+            <input type="text" name="event_name">
+          </label>
+        </li>
+        <br>
+        <li>
+          <label>Number of members
+            <select name="event_number_of_memebers">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+            </select>
+          </label>
+        </li>
+        <br>
+        <li>
+          <label>Address
+            <br><br>
+            <ul>
+              <li>
+                <label>City
+                  <input type="text" name="event_city">
+                </label>
+              </li>
+              <br>
+              <li>
+                <label>Post code
+                  <input type="text" name="event_post_code">
+                </label>
+              </li>
+              <br>
+              <li>
+                <label>Street name
+                  <input type="text" name="event_street_name">
+                </label>
+              </li>
+              <br>
+              <li>
+                <label>Street number
+                  <input type="text" name="event_street_number">
+                </label>
+              </li>
+            </ul>
+            <br>
+        </li>
+        <li>
+          <label for="description">Short description</label>
+          <div>
+            <textarea id="description" name="event_description" rows="5" cols="45"></textarea>
+          </div>
+        </li>
+      </ol>
+      <br>
+      <div>
+        <input type="submit" value="Create">
+        <input type="reset" value="Clear">
+      </div>
+    </form>
+  </section>
+  <br><hr>
+  <footer>
+    <p>&copy Michał Wiczk, Maciej Bartosik</p>
+    <a href="#title">Upper</a>
+  </footer>
+</body>
+
+</html>
