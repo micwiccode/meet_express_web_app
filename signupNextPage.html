@@ -34,63 +34,59 @@
   <hr>
   <section>
     <h1>Sign up</h1>
-    <form action="signupNextPage.html" autocomplete="on" method="post">
+    <form action="" autocomplete="on">
       <ol>
         <li>
-          <label>Name
-            <input type="text" name="user_name" placeholder="John" required autofocus >
+          <label>User name
+            <input type="text" name="user_user_name" placeholder="john99" required>
           </label>
         </li>
         <br>
         <li>
-          <label>Surname
-            <input type="text" name="user_surname" placeholder="Copper" required >
+          <label>Password
+            <input type="password" name="user_password" placeholder="*********" required>
           </label>
         </li>
         <br>
         <li>
-          <label>Sex
-            <input type="radio" name="user_sex">Man
-            <input type="radio" name="user_sex">Woman
+          <label>Repeat password
+            <input type="password" name="user_password_repeat" required>
           </label>
         </li>
         <br>
         <li>
-          <label>E-mail
-            <input type="email" name="user-email" placeholder="john.coppper@gmial.com" required >
+          <label>Favourite color:
+            <input type="color" name="user_color" value="#ff0000">
           </label>
         </li>
         <br>
         <li>
-          <label>Month of birth
-            <input list="months">
-            <datalist id="months">
-              <option value="January"></option>
-              <option value="February"></option>
-              <option value="March"></option>
-              <option value="April"></option>
-              <option value="May"></option>
-              <option value="June"></option>
-              <option value="July"></option>
-              <option value="August"></option>
-              <option value="September"></option>
-              <option value="October"></option>
-              <option value="November"></option>
-              <option value="December"></option>
-            </datalist>
+          <label>When did you finish secondary school?
+            <input type="month" name="user_month">
           </label>
         </li>
         <br>
         <li>
-          <label>Phone
-            <input type="tel" placeholder="(111) 222-3333"
-            pattern = "\(\d{3}\) +\d{3}-\d{4}" required  />
-            (###) ###-####
+          <label>How much are u interested in sport?
+            0<input type="range" name="user_range" min="0" max="10" step="1" value="5">10
           </label>
         </li>
         <br>
-
+        <li>
+          <label>I have no idea about what should I ask with search input in personal data form:
+            <input type="search" name="q">
+          </label>
+        </li>
+        <br>
+        <li>
+          <label>Url to your website:
+            <input type="url" name="user_url" placeholder="http://mywebsite.com">
+          </label>
+        </li>
       </ol>
+      <label>Accept <a href="ftp://speedtest.tele2.net/512KB.zip" download="512KB.zip">regulations</a>
+        <input type="checkbox" value="acceptation">
+      </label>
       <br><br>
       <div>
         <input type="submit" value="Sign up">

@@ -9,7 +9,7 @@
   <meta name="author" content="Michał Wiczk, Maciej Bartosik">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Meet Express</title>
+  <title>Meet Express - log in</title>
 </head>
 
 <body>
@@ -25,20 +25,50 @@
       <ul>
         <li><a href="create.html">Create event</a></li>
         <li><a href="findevents.html">Find event</a></li>
-        <li><a href="myevents.html">Reviw your events</li>
-        <li><a href="login.html">Login in</li>
+        <li><a href="myevents.html">Reviw your events</a></li>
+        <li><a href="login.html">Log in</a></li>
         <li><a href="signup.html">Sign up</a></li>
       </ul>
     </nav>
   </header>
+  <hr>
 
   <section>
+    <h1>Log in</h1>
+    <form method="post" name="login">
+      <label>Name
+        <input type="text" name="login" required>
+      </label>
+      <br>
+      <label>Password
+        <input type="password" name="password" required>
+      </label>
+      <br>
+      <label>Remember me
+        <input type="checkbox">
+      </label>
+      <br>
+      <input type="submit" value="Log in">
+    </form>
 
   </section>
-  <footer>
-    <p>&copy Michał Wiczk, Maciej Bartosik</p>
-    <a href="#title">Upper</a>
-  </footer>
+  <br><hr>
+   <footer>
+     <table border="2px">
+       <tr>
+         <th rowspan="2">&copy Authors:</th>
+         <td>Michał Wiczk</td>
+       </tr>
+       <tr>
+         <td>Maciek Bartosik</td>
+       </tr>
+     </table>     <a href="mailto:meetexpress@gmial.com">Contact us</a>
+     <a href="./img/logo.png" download>Get our logo</a>
+     <a href="upload/html_1.doc" download>Get task</a>
+
+     <br>
+     <a href="#title">Upper</a>
+   </footer>
 </body>
 
 </html>

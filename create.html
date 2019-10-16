@@ -9,7 +9,7 @@
   <meta name="author" content="Michał Wiczk, Maciej Bartosik">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Meet Express</title>
+  <title>Meet Express - create event</title>
 </head>
 
 <body>
@@ -25,8 +25,8 @@
       <ul>
         <li><a href="create.html">Create event</a></li>
         <li><a href="findevents.html">Find event</a></li>
-        <li><a href="myevents.html">Reviw your events</li>
-        <li><a href="login.html">Login in</li>
+        <li><a href="myevents.html">Reviw your events</a></li>
+        <li><a href="login.html">Log in</a></li>
         <li><a href="signup.html">Sign up</a></li>
       </ul>
     </nav>
@@ -60,7 +60,7 @@
         </li>
         <br>
         <li>
-          <label>Address
+          <label>Address</label>
             <br><br>
             <ul>
               <li>
@@ -90,6 +90,18 @@
             <br>
         </li>
         <li>
+          <label>Type (You can chceck multpile options)</label>
+          <label>Sport
+            <input type="checkbox" name="event_type">
+          </label>
+          <label>Meeting
+            <input type="checkbox" name="event_type">
+          </label>
+          <label>Trip
+          <input type="checkbox" name="event_type">
+        </label>
+        </li>
+        <li>
           <label for="description">Short description</label>
           <div>
             <textarea id="description" name="event_description" rows="5" cols="45"></textarea>
@@ -104,10 +116,22 @@
     </form>
   </section>
   <br><hr>
-  <footer>
-    <p>&copy Michał Wiczk, Maciej Bartosik</p>
-    <a href="#title">Upper</a>
-  </footer>
+    <footer>
+      <table border="2px">
+        <tr>
+          <th rowspan="2">&copy Authors:</th>
+          <td>Michał Wiczk</td>
+        </tr>
+        <tr>
+          <td>Maciek Bartosik</td>
+        </tr>
+      </table>      <a href="mailto:meetexpress@gmial.com">Contact us</a>
+      <a href="./img/logo.png" download>Get our logo</a>
+      <a href="upload/html_1.doc" download>Get task</a>
+
+      <br>
+      <a href="#title">Upper</a>
+    </footer>
 </body>
 
 </html>
