@@ -1,0 +1,76 @@
+@import url("colors.css");
+
+.header {
+  position: fixed;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px;
+  background-color: var(--white);
+}
+
+.header__box {
+  display: flex;
+}
+
+.header__img {
+  padding: 30px;
+}
+
+.header__title__main {
+  font-family: 'Fugaz One', cursive;
+  color: var(--blue);
+}
+
+.header__title__main {
+  margin-bottom: 0;
+}
+
+.header__title__sub {
+  margin: 0;
+}
+
+.header__list {
+  display: flex;
+  list-style-type: none;
+  height: 100%;
+  margin: 0;
+}
+
+.header__list__element {
+  padding: 20px;
+  border-bottom: transparent 4px solid;
+  transition: border-bottom .4s ease-in-out;
+}
+
+.header__list__element:last-child {
+  padding: 20px;
+  border: var(--blue) 2px solid;
+  border-bottom: var(--blue) 4px solid;
+  border-radius: 10px;
+  transition: background-color .4s ease-in-out;
+  margin-left: 5px;
+}
+
+.header__list__element:hover {
+  border-bottom: var(--blue) 4px solid;
+}
+
+.header__list__element:last-child:hover {
+  background-color: var(--blue);
+}
+
+.header__list__element:last-child:hover .header__list__link {
+  color: var(--white);
+}
+
+.header__list__link {
+  text-decoration: none;
+  color: var(--blue);
+  font-weight: 600;
+  transition: color .4s ease-in-out;
+}

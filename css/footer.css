@@ -1,0 +1,26 @@
+@import url("colors.css");
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--blue);
+  color: var(--white);
+  padding: 2% 10%;
+  opacity: 0.8;
+}
+
+.footer__links {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__links a {
+  color: hsla(var(--white));
+  margin-bottom: 5px;
+  font-size: .8em;
+}
+
+.footer__table {
+  border: none;
+}

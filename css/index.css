@@ -1,0 +1,47 @@
+@import url("colors.css");
+
+.article {
+  height: 100vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 5%;
+}
+
+.article__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  padding: 10%;
+}
+
+.article:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+.article__img {
+  min-height: 400px;
+  min-width: 400px;
+}
+
+.article__button {
+  margin-top: 10%;
+  width: 150px;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1.1em;
+  text-align: center;
+  color: var(--blue);
+  border: none;
+  border: var(--blue) 3px solid;
+  padding: 15px;
+  transition: color .5s ease-in-out,
+    background-color .5s ease-in-out;
+}
+
+.article__button:hover {
+  color: var(--white);
+  background-color: var(--blue);
+}
