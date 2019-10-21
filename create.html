@@ -10,30 +10,35 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Meet Express - create event</title>
-  <link rel="stylesheet" href="/css/wrapper.css">
+  <link href="https://fonts.googleapis.com/css?family=Fugaz+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type='text/css' href="./css/wrapper.css">
+  <link rel="stylesheet" type='text/css' href="./css/header.css">
+  <link rel="stylesheet" type='text/css' href="./css/footer.css">
+  <link rel="stylesheet" type='text/css' href="./css/create.css">
 </head>
 
 <body>
-  <header>
-    <a id="title" href="index.html">
-      <div>
-        <img src="img/logo.png" width="75" height="75" alt="Logo">
-        <h1>Meet Express</h1>
-        <h6>Meet, Enjoy And Befriend</h6>
+  <header class="header">
+    <a class="header__link" href="index.html">
+      <div class="header__box">
+        <img class="header__img" src="img/logo.png" alt="Logo">
+        <div class="header__title">
+          <h1 class="header__title__main">Meet Express </h1>
+          <h3 class="header__title__sub">Meet, Enjoy And Befriend</h3>
+        </div>
       </div>
     </a>
     <nav>
-      <ul>
-        <li><a href="create.html">Create event</a></li>
-        <li><a href="findevents.html">Find event</a></li>
-        <li><a href="myevents.html">Reviw your events</a></li>
-        <li><a href="login.html">Log in</a></li>
-        <li><a href="signup.html">Sign up</a></li>
+      <ul class="nav">
+        <li class="nav__element nav__element--active"><a class="nav__link" href="create.html">Create event</a></li>
+        <li class="nav__element"><a class="nav__link" href="findevents.html">Find event</a></li>
+        <li class="nav__element"><a class="nav__link" href="myevents.html">Reviw your events</a></li>
+        <li class="nav__element"><a class="nav__link" href="login.html">Log in</a></li>
+        <li class="nav__element"><a class="nav__link" href="signup.html">Sign up</a></li>
       </ul>
     </nav>
   </header>
-  <hr>
-  <section>
+  <section class=container id="upper">
     <h1>Create event</h1>
     <form action="">
       <ol>
@@ -62,33 +67,33 @@
         <br>
         <li>
           <label>Address</label>
-            <br><br>
-            <ul>
-              <li>
-                <label>City
-                  <input type="text" name="event_city">
-                </label>
-              </li>
-              <br>
-              <li>
-                <label>Post code
-                  <input type="text" name="event_post_code">
-                </label>
-              </li>
-              <br>
-              <li>
-                <label>Street name
-                  <input type="text" name="event_street_name">
-                </label>
-              </li>
-              <br>
-              <li>
-                <label>Street number
-                  <input type="text" name="event_street_number">
-                </label>
-              </li>
-            </ul>
+          <br><br>
+          <ul>
+            <li>
+              <label>City
+                <input type="text" name="event_city">
+              </label>
+            </li>
             <br>
+            <li>
+              <label>Post code
+                <input type="text" name="event_post_code">
+              </label>
+            </li>
+            <br>
+            <li>
+              <label>Street name
+                <input type="text" name="event_street_name">
+              </label>
+            </li>
+            <br>
+            <li>
+              <label>Street number
+                <input type="text" name="event_street_number">
+              </label>
+            </li>
+          </ul>
+          <br>
         </li>
         <li>
           <label>Type (You can chceck multpile options)</label>
@@ -99,8 +104,8 @@
             <input type="checkbox" name="event_type">
           </label>
           <label>Trip
-          <input type="checkbox" name="event_type">
-        </label>
+            <input type="checkbox" name="event_type">
+          </label>
         </li>
         <li>
           <label for="description">Short description</label>
@@ -116,23 +121,23 @@
       </div>
     </form>
   </section>
-  <br><hr>
-    <footer>
-      <table border="2px">
-        <tr>
-          <th rowspan="2">&copy Authors:</th>
-          <td>Michał Wiczk</td>
-        </tr>
-        <tr>
-          <td>Maciek Bartosik</td>
-        </tr>
-      </table>      <a href="mailto:meetexpress@gmial.com">Contact us</a>
+  <footer class='footer'>
+    <div class="footer__links">
+      <a href="mailto:meetexpress@gmial.com">Contact us</a>
       <a href="./img/logo.png" download>Get our logo</a>
       <a href="upload/html_1.doc" download>Get task</a>
-
-      <br>
-      <a href="#title">Upper</a>
-    </footer>
+      <a href="#upper">Upper</a>
+    </div>
+    <table class='footer__table'>
+      <tr>
+        <th rowspan="2">&copy; Authors:</th>
+        <td>Michał Wiczk</td>
+      </tr>
+      <tr>
+        <td>Maciek Bartosik</td>
+      </tr>
+    </table>
+  </footer>
 </body>
 
 </html>
