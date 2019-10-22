@@ -1,3 +1,57 @@
-.container {
-  margin-top: 20vh;
+.container{
+  margin: 25vh;
 }
+
+.form{
+  position: static;
+  float: left;
+}
+
+img{
+  float: left;
+}
+
+p{
+  clear: left;
+}
+
+p:nth-last-child(2) {
+  line-height: 150px;
+  font-family: "Times New Roman",
+  serif;
+  font-size: 24px;
+}
+
+.form__label:first-child{
+  font-weight: bold;
+}
+
+.form__label:nth-child(3) {
+  font-style: italic;
+}
+
+label:last-of-type {
+   font-variant: small-caps;
+}
+
+.form__input:focus {
+  border-color: lawngreen;
+}
+
+.form__label:not(:empty) {
+  background-color: blue;
+}
+
+#form__checkbox:focus{
+  background-color: lawngreen;
+}
+
+input[type=text]:enabled {
+  background: #ffff00;
+}
+
+*:required{
+  border-color: lightseagreen;
+}
+
+

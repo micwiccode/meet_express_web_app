@@ -1,22 +1,5 @@
-@import url("colors.css");
-
 .container {
   margin-top: 2%;
-}
-
-.article {
-  height: 100vh;
-  display: flex;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 5%;
 }
 
 .article__text {
@@ -36,6 +19,10 @@
           align-items: center;
   width: 50%;
   padding: 10%;
+}
+
+.article__paragraph {
+  width: 100%;
 }
 
 .article:nth-child(even) {
@@ -65,17 +52,18 @@
     background-color .5s ease-in-out;
 }
 
+.article__button:hover {
+  background-color: #5576E3;
+}
+
 .article__button * {
   text-decoration: none;
   color: #5576E3;
 }
 
-.article__button:hover* {
+.article__button:hover * {
   text-decoration: none;
   color: #fff;
 }
 
-.article__button:hover {
-  color: #fff;
-  background-color: #5576E3;
-}
+

@@ -18,6 +18,18 @@
 </head>
 
 <body>
+    <style>
+        .search__input {
+            margin-left: 10px;
+            border: none;
+            border-bottom: #ddd 2px solid;
+            font-size: 1.1em;
+        }
+
+        .search__input:focus {
+            border-bottom: #5576E3 2px solid;
+        }
+    </style>
     <header class="header">
         <a class="header__link" href="index.html">
             <div class="header__box">
@@ -28,9 +40,34 @@
                 </div>
             </div>
         </a>
-         <nav class="nav">
-             <ul class="nav__list">
-                <li class="nav__element"><a class="nav__link" href="create.html">Create event</a></li>
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__element"><a class="nav__link" href="create.html">Create event</a>
+                    <ul>
+                        <li><a href="">Submenu + </a>
+                            <ul>
+                                <li><a href="">SubSubmenu</a></li>
+                                <li><a href="">SubSubmenu</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="">Submenu + </a>
+                            <ul>
+                                <li><a href="">SubSubmenu</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="">Submenu + </a>
+                            <ul>
+                                <li><a href="">SubSubmenu</a></li>
+                                <li><a href="">SubSubSubmenu + </a>
+                                    <ul>
+                                        <li><a href="">SubSubSubmenu</a></li>
+                                        <li><a href="">SubSubSubmenu</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
                 <li class="nav__element nav__element--active"><a class="nav__link" href="findevents.html">Find event</a>
                 </li>
                 <li class="nav__element"><a class="nav__link" href="myevents.html">Reviw your events</a></li>
@@ -39,14 +76,14 @@
             </ul>
         </nav>
     </header>
-    <main class=container id="upper">
+    <div class=container id="upper">
         <div class="search">
-             <label class="search__label">Search:
-                 <input class="search__input" type="search" placeholder="Search event" />
-             </label>
+            <label class="search__label" style="margin: 10px auto; color:  #5576E3; font-size: 1.1em;">Search:
+                <input class="search__input" type="search" placeholder="Search event" />
+            </label>
         </div>
         <section class="events">
-            <div class="box">
+            <div class="box box--a">
                 <div class="box__info">
                     <h5 class="box__date">śr, 30.10.2019r.</h5>
                     <h2 class="box__title">Wyjazd w góry</h2>
@@ -55,11 +92,11 @@
                 <div class="box__botoom">
                     <h3 class="box__members">3/30</h3>
                     <form method="#">
-                        <button class="box__button type=" submit">Take part in</button>
+                        <button class="box__button" type="submit">Take part in</button>
                     </form>
                 </div>
             </div>
-            <div class="box">
+            <div class="box box--b">
                 <div class="box__info">
                     <h5 class="box__date">czw, 24.10.2019r.</h5>
                     <h2 class="box__title">Piłka nożna na kampusie</h2>
@@ -68,11 +105,11 @@
                 <div class="box__botoom">
                     <h3 class="box__members">9/10</h3>
                     <form method="#">
-                        <button class="box__button type=" submit">Take part in</button>
+                        <button class="box__button" type="submit">Take part in</button>
                     </form>
                 </div>
             </div>
-            <div class="box">
+            <div class="box box--c">
                 <div class="box__info">
                     <h5 class="box__date">ndz, 27.10.2019r.</h5>
                     <h2 class="box__title">Turniej w LOLa</h2>
@@ -81,11 +118,11 @@
                 <div class="box__botoom">
                     <h3 class="box__members">29/40</h3>
                     <form method="#">
-                        <button class="box__button type=" submit">Take part in</button>
+                        <button class="box__button" type="submit">Take part in</button>
                     </form>
                 </div>
             </div>
-            <div class="box">
+            <div class="box box--d">
                 <div class="box__info">
                     <h5 class="box__date">pn, 28.10.2019r.</h5>
                     <h2 class="box__title">Siatkówka</h2>
@@ -94,106 +131,12 @@
                 <div class="box__botoom">
                     <h3 class="box__members">1/15</h3>
                     <form method="#">
-                        <button class="box__button type=" submit">Take part in</button>
+                        <button class="box__button" type="submit">Take part in</button>
                     </form>
                 </div>
             </div>
         </section>
-    </main>
-
-    <!-- <table width="100%" border="1px solid black">
-        <thead>
-            <tr>
-                <th>
-                    Event
-                </th>
-                <th colspan="2">
-                    Date
-                </th>
-                <th>
-                    People
-                </th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>
-                    Wyjazd w góry
-                </td>
-                <td>
-                    29.09.2019
-                </td>
-                <td>
-                    30.09.2019
-                </td>
-                <td>
-                    2/10
-                </td>
-                <td>
-                    <form method="#">
-                        <button type="submit">Take part in</button>
-                    </form>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    Piłka nożna na kampusie
-                </td>
-                <td colspan="2">
-                    16.10.2019
-                </td>
-                <td>
-                    1/22
-                </td>
-                <td>
-                    <form method="#">
-                        <button type="submit">Take part in</button>
-                    </form>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    Granie w siatę
-                </td>
-                <td colspan="2">
-                    17.10.2019
-                </td>
-                <td>
-                    4/4
-                </td>
-                <td>
-                    <form method="#">
-                        <button type="submit">Take part in</button>
-                    </form>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    Turniej w LOLa
-                </td>
-                <td colspan="2">
-                    <table width="100%" border="4" bordercolor="RED">
-                        <tr>
-                            <td>
-                                6.10.2019
-                            </td>
-                            <td>
-                                13.10.2019
-                            </td>
-                        </tr>
-                    </table>
-                </td>
-                <td>
-                    2/9
-                </td>
-                <td>
-                    <form method="#">
-                        <button type="submit">Take part in</button>
-                    </form>
-                </td>
-            </tr>
-        </tbody>
-    </table> -->
+    </div>
     <footer class='footer'>
         <div class="footer__links">
             <a href="mailto:meetexpress@gmial.com">Contact us</a>

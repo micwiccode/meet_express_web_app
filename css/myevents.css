@@ -1,3 +1,6 @@
-.container {
+#myEvents{
   margin-top: 20vh;
+  border-width: 1px;
+  border-style: dashed;
+  border-color: red;
 }

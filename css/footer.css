@@ -1,40 +1,37 @@
 @import url("colors.css");
 
 .footer {
-  display: flex;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background-color: var(--blue);
-  color: var(--white);
+  position: relative;
+  bottom: 0;
+  left: 0;
+  background-color: #5576E3;
+  color: #fff;
   margin: 20px 0 0 0;
   padding: 2% 10%;
   opacity: 0.8;
 }
 
 .footer__links {
-  display: flex;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  left: 30%;
 }
 
 .footer__links a {
-  color: var(--white);
+  display: block;
   margin-bottom: 5px;
   font-size: .8em;
 }
 
+.footer__links a:link {
+  color: #fff;
+}
+
+.footer__links a:visited {
+  color: #000;
+}
+
 .footer__table {
   border: none;
+  position: absolute;
+  right: 20%;
+  top: 30%;
 }
