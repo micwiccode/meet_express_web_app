@@ -13,7 +13,7 @@
           align-items: center;
   background-color: var(--blue);
   color: var(--white);
-  margin: 20px  0 0 0;
+  margin: 20px 0 0 0;
   padding: 2% 10%;
   opacity: 0.8;
 }
@@ -30,7 +30,7 @@
 }
 
 .footer__links a {
-  color: hsla(var(--white));
+  color: var(--white);
   margin-bottom: 5px;
   font-size: .8em;
 }
