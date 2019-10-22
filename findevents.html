@@ -15,37 +15,93 @@
     <link rel="stylesheet" type='text/css' href="./css/header.css">
     <link rel="stylesheet" type='text/css' href="./css/footer.css">
     <link rel="stylesheet" type='text/css' href="./css/findevents.css">
-    </head>
+</head>
 
-    <body>
-        <header class="header">
-            <a class="header__link" href="index.html">
-                <div class="header__box">
-                    <img class="header__img" src="img/logo.png" alt="Logo">
-                    <div class="header__title">
-                        <h1 class="header__title__main">Meet Express </h1>
-                        <h3 class="header__title__sub">Meet, Enjoy And Befriend</h3>
-                    </div>
+<body>
+    <header class="header">
+        <a class="header__link" href="index.html">
+            <div class="header__box">
+                <img class="header__img" src="img/logo.png" alt="Logo">
+                <div class="header__title">
+                    <h1 class="header__title__main">Meet Express </h1>
+                    <h3 class="header__title__sub">Meet, Enjoy And Befriend</h3>
                 </div>
-            </a>
-        <nav>
-            <ul class="nav">
+            </div>
+        </a>
+         <nav class="nav">
+             <ul class="nav__list">
                 <li class="nav__element"><a class="nav__link" href="create.html">Create event</a></li>
-                <li class="nav__element nav__element--active"><a class="nav__link" href="findevents.html">Find event</a></li>
+                <li class="nav__element nav__element--active"><a class="nav__link" href="findevents.html">Find event</a>
+                </li>
                 <li class="nav__element"><a class="nav__link" href="myevents.html">Reviw your events</a></li>
                 <li class="nav__element"><a class="nav__link" href="login.html">Log in</a></li>
                 <li class="nav__element"><a class="nav__link" href="signup.html">Sign up</a></li>
             </ul>
         </nav>
     </header>
-    <section class=container id="upper">
-        <label>Search:
-            <input type="search" placeholder="Search event" />
-        </label>
+    <main class=container id="upper">
+        <div class="search">
+             <label class="search__label">Search:
+                 <input class="search__input" type="search" placeholder="Search event" />
+             </label>
+        </div>
+        <section class="events">
+            <div class="box">
+                <div class="box__info">
+                    <h5 class="box__date">śr, 30.10.2019r.</h5>
+                    <h2 class="box__title">Wyjazd w góry</h2>
+                    <h4 class="box__place">Zakopane ul. Wielka 12</h4>
+                </div>
+                <div class="box__botoom">
+                    <h3 class="box__members">3/30</h3>
+                    <form method="#">
+                        <button class="box__button type=" submit">Take part in</button>
+                    </form>
+                </div>
+            </div>
+            <div class="box">
+                <div class="box__info">
+                    <h5 class="box__date">czw, 24.10.2019r.</h5>
+                    <h2 class="box__title">Piłka nożna na kampusie</h2>
+                    <h4 class="box__place">Wrocław ul. Wybrzeże Stanisława Wyspiańskiego 27</h4>
+                </div>
+                <div class="box__botoom">
+                    <h3 class="box__members">9/10</h3>
+                    <form method="#">
+                        <button class="box__button type=" submit">Take part in</button>
+                    </form>
+                </div>
+            </div>
+            <div class="box">
+                <div class="box__info">
+                    <h5 class="box__date">ndz, 27.10.2019r.</h5>
+                    <h2 class="box__title">Turniej w LOLa</h2>
+                    <h4 class="box__place">Wrocław ul. Kamienna 1</h4>
+                </div>
+                <div class="box__botoom">
+                    <h3 class="box__members">29/40</h3>
+                    <form method="#">
+                        <button class="box__button type=" submit">Take part in</button>
+                    </form>
+                </div>
+            </div>
+            <div class="box">
+                <div class="box__info">
+                    <h5 class="box__date">pn, 28.10.2019r.</h5>
+                    <h2 class="box__title">Siatkówka</h2>
+                    <h4 class="box__place">Wrocław ul. Chełmońskiego 10</h4>
+                </div>
+                <div class="box__botoom">
+                    <h3 class="box__members">1/15</h3>
+                    <form method="#">
+                        <button class="box__button type=" submit">Take part in</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
 
-    </section>
-
-    <table width="100%" border="1px solid black">
+    <!-- <table width="100%" border="1px solid black">
         <thead>
             <tr>
                 <th>
@@ -137,7 +193,7 @@
                 </td>
             </tr>
         </tbody>
-    </table>
+    </table> -->
     <footer class='footer'>
         <div class="footer__links">
             <a href="mailto:meetexpress@gmial.com">Contact us</a>
