@@ -4,20 +4,6 @@
   margin-top: 2%;
 }
 
-.article {
-  height: 100vh;
-  display: flex;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 5%;
-}
 
 .article__text {
   display: flex;
