@@ -17,7 +17,11 @@
   <link rel="stylesheet" type='text/css' href="./css/create.css">
   <style>
     .form__label {
-        font-size: 15pt;
+      font-size: 15pt;
+    }
+
+    .form__label * {
+      display: block;
     }
   </style>
 </head>
@@ -74,7 +78,7 @@
       <ol id="form">
         <li>
           <label class="form__label">Event name
-            <input type="text" name="event_name">
+            <input class="form__input" type="text" name="event_name">
           </label>
         </li>
         <li>
@@ -123,13 +127,14 @@
         </li>
         <li>
           <label class="form__label">Type (You can chceck multpile options)</label>
-          <label class="form__label">Sport
+          <br>
+          <label class="form__checkbox">Sport
             <input type="checkbox" name="event_type">
           </label>
-          <label class="form__label">Meeting
+          <label class="form__checkbox">Meeting
             <input type="checkbox" name="event_type">
           </label>
-          <label class="form__label">Trip
+          <label class="form__checkbox">Trip
             <input type="checkbox" name="event_type">
           </label>
         </li>

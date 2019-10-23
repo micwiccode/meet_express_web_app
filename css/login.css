@@ -26,8 +26,9 @@ p:nth-last-child(2) {
   font-weight: bold;
 }
 
-.form__label:nth-child(3) {
+.form__label:nth-of-type(2) {
   font-style: italic;
+  border: #111 solid 10px;
 }
 
 label:last-of-type {

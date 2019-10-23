@@ -2,7 +2,7 @@
   margin-top: 20vh;
   background-image: url("../img/backgroudForm.jpg");
   background-position: center;
-  background-repeat: repeat-x;
+  background-repeat: repeat-x repeat-y;
   background-attachment: fixed;
 }
 
