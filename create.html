@@ -15,6 +15,11 @@
   <link rel="stylesheet" type='text/css' href="./css/header.css">
   <link rel="stylesheet" type='text/css' href="./css/footer.css">
   <link rel="stylesheet" type='text/css' href="./css/create.css">
+  <style>
+    .form__label {
+        font-size: 15pt;
+    }
+  </style>
 </head>
 
 <body>
@@ -66,15 +71,14 @@
   <section class=container id="upper">
     <h1>Create event</h1>
     <form action="">
-      <ol>
+      <ol id="form">
         <li>
-          <label>Event name
+          <label class="form__label">Event name
             <input type="text" name="event_name">
           </label>
         </li>
-        <br>
         <li>
-          <label>Number of members
+          <label class="form__label">Number of members
             <select name="event_number_of_memebers">
               <option value="1">1</option>
               <option value="2">2</option>
@@ -89,31 +93,28 @@
             </select>
           </label>
         </li>
-        <br>
         <li>
-          <label>Address</label>
+          <label class="form__label">Address</label>
           <br><br>
           <ul>
             <li>
-              <label>City
+              <label class="form__label">City
                 <input type="text" name="event_city">
               </label>
             </li>
-            <br>
+
             <li>
-              <label>Post code
+              <label class="form__label">Post code
                 <input type="text" name="event_post_code">
               </label>
             </li>
-            <br>
             <li>
-              <label>Street name
+              <label class="form__label">Street name
                 <input type="text" name="event_street_name">
               </label>
             </li>
-            <br>
             <li>
-              <label>Street number
+              <label class="form__label">Street number
                 <input type="text" name="event_street_number">
               </label>
             </li>
@@ -121,19 +122,19 @@
           <br>
         </li>
         <li>
-          <label>Type (You can chceck multpile options)</label>
-          <label>Sport
+          <label class="form__label">Type (You can chceck multpile options)</label>
+          <label class="form__label">Sport
             <input type="checkbox" name="event_type">
           </label>
-          <label>Meeting
+          <label class="form__label">Meeting
             <input type="checkbox" name="event_type">
           </label>
-          <label>Trip
+          <label class="form__label">Trip
             <input type="checkbox" name="event_type">
           </label>
         </li>
         <li>
-          <label for="description">Short description</label>
+          <label class="form__label" for="description">Short description</label>
           <div>
             <textarea id="description" name="event_description" rows="5" cols="45"></textarea>
           </div>
@@ -141,8 +142,8 @@
       </ol>
       <br>
       <div>
-        <input type="submit" value="Create">
-        <input type="reset" value="Clear">
+        <input type="submit" value="Create" class="form__input">
+        <input type="reset" value="Clear" class="form__input">
       </div>
     </form>
   </section>
