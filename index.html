@@ -10,81 +10,129 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Meet Express</title>
+  <link href="https://fonts.googleapis.com/css?family=Fugaz+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type='text/css' href="./css/wrapper.css">
+  <link rel="stylesheet" type='text/css' href="./css/header.css">
+  <link rel="stylesheet" type='text/css' href="./css/footer.css">
+  <link rel="stylesheet" type='text/css' href="./css/index.css">
+  <style>
+    .article {
+      height: 100vh;
+      display: flex;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+      justify-content: space-evenly;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      padding: 5%;
+    }
+  </style>
 </head>
 
+
 <body>
-  <header>
-    <div id="title">
-      <img src="img/logo.png" alt="Logo">
-      <h1>Meet Express</h1>
-      <h6>Meet, Enjoy And Befriend</h6>
+  <header class="header">
+    <div class="header__box">
+      <img class="header__img" src="img/logo.png" alt="Logo">
+      <div class="header__title">
+        <h1 class="header__title__main">Meet Express </h1>
+        <h3 class="header__title__sub">Meet, Enjoy And Befriend</h3>
+      </div>
     </div>
-    <nav>
-      <ul>
-        <li><a href="create.html">Create event</a></li>
-        <li><a href="findevents.html">Find event</a></li>
-        <li><a href="myevents.html">Reviw your events</a></li>
-        <li><a href="login.html">Log in</a></li>
-        <li><a href="signup.html">Sign up</a></li>
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__element"><a class="nav__link" href="create.html">Create event</a>
+          <ul>
+            <li><a href="">Submenu + </a>
+              <ul>
+                <li><a href="">SubSubmenu</a></li>
+                <li><a href="">SubSubmenu</a></li>
+              </ul>
+            </li>
+            <li><a href="">Submenu + </a>
+              <ul>
+                <li><a href="">SubSubmenu</a></li>
+              </ul>
+            </li>
+            <li><a href="">Submenu + </a>
+              <ul>
+                <li><a href="">SubSubmenu</a></li>
+                <li><a href="">SubSubSubmenu + </a>
+                  <ul>
+                    <li><a href="">SubSubSubmenu</a></li>
+                    <li><a href="">SubSubSubmenu</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li class="nav__element"><a class="nav__link" href="findevents.html">Find event</a></li>
+        <li class="nav__element"><a class="nav__link" href="myevents.html">Reviw your events</a></li>
+        <li class="nav__element"><a class="nav__link" href="login.html">Log in</a></li>
+        <li class="nav__element"><a class="nav__link" href="signup.html">Sign up</a></li>
       </ul>
     </nav>
   </header>
-  <hr>
-  <section>
-    <h2>Lorem ipsum</h2>
-    <article>
-      <h3>The best way to meet friends</h3>
-      <details>
-        <summary>Lorem, ipsum dolor.</summary>
-        <p>
+  <section class=container id="upper">
+    <article class=article>
+      <div class="article__text">
+        <h2 class="article__title">The best way to meet friends</h2>
+        <p class="article__paragraph">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. In officia ipsa, qui id porro tempore sit tempora
-          obcaecati sed consequuntur ullam cumque perferendis voluptatem assumenda labore, quos ex iste nemo molestiae.
-          Nihil dolores cumque provident doloribus quo eligendi velit eum at et natus, amet fugit quas nobis! At,
-          voluptatem dolorum?
+          obcaecati sed consequuntur ullam cumque perferendis voluptatem assumenda labore, quos ex iste nemo
         </p>
-      </details>
-      <form method="get" action="signup.html">
-        <button type="submit">Find it out</button>
-      </form>
-      <img src="./img/backlit-bright-dawn-697243.jpg" alt="main-photo" width="600" height="400">
+        <div class="article__button">
+          <a href="signup.html">Find it out</a>
+        </div>
+      </div>
+      <img class="article__img" src="./img/backlit-bright-dawn-697243.jpg" alt="main-photo">
     </article>
-    <article>
-      <h3>The <strong>easiest</strong> way to find events in your nearby</h3>
-      <details>
-        <summary>Lorem, ipsum dolor.</summary>
-        <p>
+    <article class=article>
+      <div class="article__text">
+        <h2 class="article__title">The easiest way to find events in your nearby</h2>
+        <p class="article__paragraph">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. In officia ipsa, qui id porro tempore sit tempora
-          obcaecati sed consequuntur ullam cumque perferendis voluptatem assumenda labore, quos ex iste nemo molestiae.
+          obcaecati sed consequuntur ullam cumque perferendis voluptatem assumenda labore, quos ex iste nemo
+          molestiae.
           Nihil dolores cumque provident doloribus quo eligendi velit eum at et natus, amet fugit quas nobis! At,
           voluptatem dolorum?
         </p>
-      </details>
-      <form method="get" action="findevents.html">
-        <button type="submit">Check events</button>
-      </form>
-      <img src="./img/chatting-dog-faces-745045.jpg" alt="main-photo" width="600" height="400">
+        <div class="article__button">
+          <a href="findevents.html">Check events</a>
+        </div>
+      </div>
+      <img class="article__img" src="./img/chatting-dog-faces-745045.jpg" alt="main-photo">
     </article>
-    <article>
-      <h3>Organizing events has never been so easy</h3>
-      <details>
-        <summary>Lorem, ipsum dolor.</summary>
-        <p>
+    <article class=article>
+      <div class="article__text">
+        <h2 class="article__title">Organizing events has never been so easy</h2>
+        <p class="article__paragraph">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. In officia ipsa, qui id porro tempore sit tempora
-          obcaecati sed consequuntur ullam cumque perferendis voluptatem assumenda labore, quos ex iste nemo molestiae.
+          obcaecati sed consequuntur ullam cumque perferendis voluptatem assumenda labore, quos ex iste nemo
+          molestiae.
           Nihil dolores cumque provident doloribus quo eligendi velit eum at et natus, amet fugit quas nobis! At,
           voluptatem dolorum?
         </p>
-      </details>
-      <form method="get" action="create.html">
-        <button type="submit">Find it out</button>
-      </form>
-      <img src="./img/backlit-dawn-friends-862848.jpg" alt="main-photo" width="600" height="400">
+        <div class="article__button">
+          <a href="create.html">Create event</a>
+        </div>
+      </div>
+      <img class="article__img" src="./img/backlit-dawn-friends-862848.jpg" alt="main-photo">
     </article>
   </section>
-  <br>
-  <hr>
-  <footer>
-    <table border="2px">
+  <footer class='footer'>
+    <div class="footer__links">
+      <a href="mailto:meetexpress@gmial.com">Contact us</a>
+      <a href="./img/logo.png" download>Get our logo</a>
+      <a href="upload/html_1.doc" download>Get task</a>
+      <a href="#upper">Upper</a>
+    </div>
+    <table class='footer__table'>
       <tr>
         <th rowspan="2">&copy; Authors:</th>
         <td>Michał Wiczk</td>
@@ -92,12 +140,7 @@
       <tr>
         <td>Maciek Bartosik</td>
       </tr>
-    </table>    <a href="mailto:meetexpress@gmial.com">Contact us</a>
-    <a href="./img/logo.png" download>Get our logo</a>
-    <a href="upload/html_1.doc" download>Get task</a>
-
-    <br>
-    <a href="#title">Upper</a>
+    </table>
   </footer>
 </body>
 
