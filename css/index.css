@@ -33,8 +33,8 @@
 }
 
 .article__img {
-  min-height: 400px;
-  min-width: 400px;
+  height: 400px;
+  width: 600px;
 }
 
 .article__button {
