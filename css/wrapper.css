@@ -2,9 +2,11 @@ body {
   padding: 0;
   margin: 0;
   font-family: 'Montserrat', sans-serif;
+  margin-top: 20vh;
+  min-height: 100vh;
 }
 
 *,*::after,*::before {
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+  box-sizing: border-box;łł
 }
