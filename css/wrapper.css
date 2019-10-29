@@ -2,11 +2,15 @@ body {
   padding: 0;
   margin: 0;
   font-family: 'Montserrat', sans-serif;
-  margin-top: 20vh;
   min-height: 100vh;
+  margin-top: 20vh;
 }
 
-*,*::after,*::before {
+*,
+*::after,
+*::before {
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;łł
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }

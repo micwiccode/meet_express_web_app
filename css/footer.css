@@ -35,3 +35,11 @@
   right: 20%;
   top: 30%;
 }
+
+@media screen and (max-width: 1000px){
+  .footer__table {
+    right: 5%;
+    top: 30%;
+    font-size: .8em;
+  }
+}
