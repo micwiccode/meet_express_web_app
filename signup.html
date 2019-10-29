@@ -43,69 +43,59 @@
     </nav>
   </header>
   <section class="container" id="upper">
-    <h1>Sign up</h1>
-    <form action="signupNextPage.html" autocomplete="on" method="post">
-      <ol>
-        <li>
-          <label>Name
-            <input type="text" name="user_name" placeholder="John" required autofocus>
-          </label>
-          <br>
-        </li>
-        <li>
-          <label>Surname
-            <input type="text" name="user_surname" placeholder="Copper" required>
-          </label>
-          <br>
-        </li>
-        <li>
-          <label>Sex
-            <input type="radio" name="user_sex">Man
-            <input type="radio" name="user_sex">Woman
-          </label>
-          <br>
-        </li>
-        <li>
-          <label>E-mail
-            <input type="email" name="user-email" placeholder="john.coppper@gmial.com" required>
-          </label>
-          <br>
-        </li>
-        <li>
-          <label>Month of birth
-            <input list="months">
-            <datalist id="months">
-              <option value="January"></option>
-              <option value="February"></option>
-              <option value="March"></option>
-              <option value="April"></option>
-              <option value="May"></option>
-              <option value="June"></option>
-              <option value="July"></option>
-              <option value="August"></option>
-              <option value="September"></option>
-              <option value="October"></option>
-              <option value="November"></option>
-              <option value="December"></option>
-            </datalist>
-          </label>
-          <br>
-        </li>
-        <li>
-          <label>Phone
-            <input type="tel" placeholder="(111) 222-3333" pattern="\(\d{3}\) +\d{3}-\d{4}" required />
-            (###) ###-####
-          </label>
-          <br>
-        </li>
-      </ol>
-      <br><br>
-      <div>
-        <input type="submit" value="Sign up">
-        <input type="reset" value="Clear">
+    <h1 class="container__header">Sign up</h1>
+    <form class="form" action="signupNextPage.html" autocomplete="on" method="post">
+      <div class="form__group">
+        <label for="name">Name</label>
+        <input id="name" class="form__input" type="text" name="user_name" placeholder="John" required autofocus>
+      </div>
+      <div class="form__group">
+        <label id="for">Surname</label>
+        <input id="surname" class="form__input" type="text" name="user_surname" placeholder="Copper" required>
+      </div>
+      <div class="form__group">
+        <label class="form__label">Sex</label>
+        <div class="form__input">
+          <label for="man">Man</label>
+          <input id="man" type="radio" name="user_sex">
+          <label for="woman">Woman</label>
+          <input id="woman" type="radio" name="user_sex">
+        </div>
+      </div>
+      <div class="form__group">
+        <label for="email" class="form__label">E-mail</label>
+        <input id="email" class="form__input" type="email" name="user-email" placeholder="john.coppper@gmial.com"
+        required>
+      </div>
+      <div class="form__group">
+        <label for="month" class="form__label">Month of birth</label>
+        <input id="month" class="form__input" list="months">
+        <datalist id="months">
+          <option value="January"></option>
+          <option value="February"></option>
+          <option value="March"></option>
+          <option value="April"></option>
+          <option value="May"></option>
+          <option value="June"></option>
+          <option value="July"></option>
+          <option value="August"></option>
+          <option value="September"></option>
+          <option value="October"></option>
+          <option value="November"></option>
+          <option value="December"></option>
+        </datalist>
+      </div>
+      <div class="form__group" >
+        <label for="phone" class="form__label">Phone</label>
+        <input id="phone" class="form__input" type="tel" placeholder="(111) 222-3333" pattern="\(\d{3}\) +\d{3}-\d{4}"
+        required />
+      </div>
+      <div class="form__buttons">
+        <input class="form__button" type="submit" value="Sign up">
+        <input class="form__button" type="reset" value="Clear">
+      </div>
       </div>
     </form>
-    </div>
   </section>
   <footer class='footer'>
     <div class="footer__links">
