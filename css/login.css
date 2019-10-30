@@ -1,3 +1,7 @@
+.container {
+  margin-bottom: 400px;
+}
+
 .form{
   position: static;
   float: left;

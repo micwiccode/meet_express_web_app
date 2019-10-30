@@ -1,3 +1,7 @@
+.container {
+  margin-bottom: 300px;
+}
+
 #myEvents {
   margin-top: 20vh;
   border-width: 1px;
@@ -7,7 +11,7 @@
   column-count: 3;
 }
 
-#myEvents__body>tr > td {
+#myEvents__body>tr>td {
   border-bottom: 1px solid #ddd;
   text-shadow: 2px 2px yellow;
 }
@@ -20,6 +24,7 @@
   background-color: BLUE;
   color: white;
 }
+
 .text {
   text-align: center;
   column-count: 2;
@@ -27,7 +32,7 @@
   column-rule: 4px double #ff00ff;
 }
 
-@media screen and (max-width: 1100px){
+@media screen and (max-width: 1100px) {
   .text {
     text-align: center;
     column-count: 1;
