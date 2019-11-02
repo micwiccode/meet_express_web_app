@@ -52,82 +52,50 @@
     </nav>
   </header>
   <section class="container" id="upper">
-    <h1>Create event</h1>
-    <form action="#">
-      <ol id="form">
-        <li>
-          <label class="form__label">Event name
-            <input class="form__input" type="text" name="event_name">
-          </label>
-        </li>
-        <li>
-          <label class="form__label">Number of members
-            <select name="event_number_of_memebers">
-              <option value="1">1</option>
-              <option value="2">2</option>
-              <option value="3">3</option>
-              <option value="4">4</option>
-              <option value="5">5</option>
-              <option value="6">6</option>
-              <option value="7">7</option>
-              <option value="8">8</option>
-              <option value="9">9</option>
-              <option value="10">10</option>
-            </select>
-          </label>
-        </li>
-        <li>
-          <label class="form__label">Address</label>
-          <br><br>
-          <ul>
-            <li>
-              <label class="form__label">City
-                <input type="text" name="event_city">
-              </label>
-            </li>
-
-            <li>
-              <label class="form__label">Post code
-                <input type="text" name="event_post_code">
-              </label>
-            </li>
-            <li>
-              <label class="form__label">Street name
-                <input type="text" name="event_street_name">
-              </label>
-            </li>
-            <li>
-              <label class="form__label">Street number
-                <input type="text" name="event_street_number">
-              </label>
-            </li>
-          </ul>
-          <br>
-        </li>
-        <li>
-          <label class="form__label">Type (You can chceck multpile options)</label>
-          <br>
-          <label class="form__checkbox">Sport
-            <input type="checkbox" name="event_type">
-          </label>
-          <label class="form__checkbox">Meeting
-            <input type="checkbox" name="event_type">
-          </label>
-          <label class="form__checkbox">Trip
-            <input type="checkbox" name="event_type">
-          </label>
-        </li>
-        <li>
-          <label class="form__label" for="description">Short description</label>
-          <div>
-            <textarea id="description" name="event_description" rows="5" cols="45"></textarea>
+    <h1 class="container__header">Create event</h1>
+    <form class="form" action="#">
+      <div class="form__group">
+        <label for="name" class="form__label">Event name</label>
+        <input id="name" class="form__input" type="text" name="event_name">
+      </div>
+      <div class="form__group">
+        <label for="number" class="form__label">Number of members</label>
+        <input id="number" class="form__input" type="number" name="number_of_members">
+      </div>
+      <div class="form__group">
+        <label class="form__label">Address
+          <label for="city" class="form__label">City</label>
+          <input id="city" class="form__input" type="text" name="event_city">
+          <label for="post_code" class="form__label">Post code</label>
+          <input id="post_code" class="form__input" type="text" name="event_post_code">
+          <label for="street_name" class="form__label">Street name</label>
+          <input id="street_name" class="form__input" type="text" name="event_street_name">
+          <label for="street_number" class="form__label">Street number</label>
+          <input id="street_number" class="form__input" type="text" name="event_street_number">
+        </label>
+      </div>
+      <div class="form__group">
+        <label class="form__label">Type (You can chceck multpile options)
+          <div class="form__checkbox">
+            <label for="sport">Sport
+              <input id="sport" type="checkbox" name="event_type">
+            </label>
+            <label for="meeting">Meeting
+              <input id="meeting" type="checkbox" name="event_type">
+            </label>
+            <label for="trip">Trip
+              <input id="trip" type="checkbox" name="event_type">
+            </label>
           </div>
-        </li>
-      </ol>
-      <br>
-      <div>
-        <input type="submit" value="Create" class="form__input">
-        <input type="reset" value="Clear" class="form__input">
+        </label>
+      </div>
+      <div class="form__group">
+        <label for="description" class="form__label">Short description</label>
+        <textarea id="description" class="form__input" name="event_description" rows="5" cols="45"></textarea>
+      </div>
+      <div class="form__buttons">
+        <input type="submit" value="Create" class="form__button">
+        <input type="reset" value="Clear" class="form__button">
       </div>
     </form>
   </section>

@@ -1,43 +1,126 @@
 .container {
-  background-image: linear-gradient(cornflowerblue, deepskyblue);
-
+  margin: 50px 0;
+  margin-bottom: 0;
+  width: 100%;
+  padding: 5%;
+  padding-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: linear-gradient(hsl(226, 72%, 61%), deepskyblue);
 }
 
-input[type=text]:focus {
-  border: 3px solid #555;
-  display: inline-block;
-
+.container__header {
+  margin: 30px 0;
+  color: #fff;
+  font-family: 'Fugaz One';
+  font-size: 2em;
+  font-weight: 400;
 }
 
-select {
+.form {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
-  border: none;
-  border-radius: 4px;
-  background-color: #f1f1f1;
+.form__group {
+  width: 50%;
+  margin: 10px auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.form__group label {
+  font-size: .9em;
+  margin-bottom: 5px;
+  font-weight: 600;
+  color: #fff;
 }
 
 .form__input {
-  padding: 16px 32px;
+  width: 100%;
+  margin-bottom: 20px;
+  border: none;
+  border-bottom: 2px #000 solid;
+  padding: 10px;
+}
+
+.form__group:nth-child(3) .form__label>label {
   text-align: center;
-  text-decoration: none;
+}
+
+.form__group:nth-child(4) .form__label>label {
+  align-items: center;
+}
+
+.form__group:nth-child(4) * {
   display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  -webkit-transition-duration: 0.4s; /* Safari */
-  transition-duration: 0.4s;
-  cursor: pointer;
-  background-color: white;
-  color: black;
-  border: 2px solid #008CBA;
-}
-.form__input:hover {
-  background-color: #008CBA;
-  color: white;
 }
 
-#form > li {
-  padding-bottom: 10px;
-  text-align: justify;
+.form__group:nth-child(4) .form__checkbox {
+  display: flex;
+  justify-content: space-around;
 }
 
+.form__button {
+  width: 150px;
+  margin: 40px 20px;
+  font-weight: 700;
+  font-size: 1.1em;
+  text-align: center;
+  border: none;
+  border: #5576E3 2px solid;
+  background: #fff;
+  color: #5576E3;
+  padding: 15px;
+  -webkit-transition: color .5s ease-in-out,
+    background-color .5s ease-in-out;
+  transition: color .5s ease-in-out,
+    background-color .5s ease-in-out;
+}
+
+.form__button:hover {
+  background-color: #5576E3;
+  color: #fff;
+}
+
+.form__button:active {
+  outline: none;
+}
+
+.form__input:focus {
+  border-bottom-color: hsla(226, 72%, 61%, 100%);
+}
+
+@media screen and (max-width: 1300px) {
+  .container {
+    padding: 10%;
+  }
+
+  .form__group {
+    width: 90%;
+  }
+
+  .form__button {
+    width: 100px;
+    margin: 20px 10px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    padding: 5%;
+  }
+
+  .form__group {
+    width: 100%;
+  }
+
+  .form__button {
+    width: 100px;
+    margin: 20px 10px;
+  }
+}
 

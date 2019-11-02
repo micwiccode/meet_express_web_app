@@ -1,3 +1,26 @@
+.container{
+  margin-top: 12%;
+}
+
+.article {
+  width: 98vw;
+  display: flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 8%;
+}
+
+.article:first-child {
+  padding-top: 0;
+}
+
 .article__text {
   display: flex;
   display: -webkit-box;

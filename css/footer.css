@@ -1,8 +1,8 @@
 @import url("colors.css");
 
 .footer {
-  position: relative;
-  bottom: 0;
+  position: absolute;
+  width: 100%;
   left: 0;
   background-color: #5576E3;
   color: #fff;

@@ -3,7 +3,7 @@ body {
   margin: 0;
   font-family: 'Montserrat', sans-serif;
   min-height: 100vh;
-  margin-top: 20vh;
+  margin-top: 15vh;
 }
 
 *,
@@ -13,4 +13,10 @@ body {
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+@media screen and (max-width: 1150px) and (min-width:750px) {
+  body {
+    margin-top: 25vh;
+  }
 }

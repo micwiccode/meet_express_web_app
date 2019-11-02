@@ -1,20 +1,9 @@
-@import url("colors.css");
-
-@font-face {
-  font-family: 'Fugaz One';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: local('Fugaz One'), local('FugazOne-Regular'), url(https://fonts.gstatic.com/s/fugazone/v9/rax_HiWKp9EAITukFsl8Axhf.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-
 .header {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  height: 20vh;
+  height: 15vh;
   padding: 10px 10%;
   background-color: #fff;
   z-index: 2;
@@ -34,20 +23,23 @@
 
 .header__img {
   padding: 30px;
-  animation: logo-animation 1.5s .6s ease-in-out backwards;
+  -webkit-animation: logo-animation 1.5s .6s ease-in-out backwards;
+          animation: logo-animation 1.5s .6s ease-in-out backwards;
 }
 
 .header__title__main {
   font-family: 'Fugaz One', cursive;
   color: hsla(226, 72%, 61%, 100%);
   margin-bottom: 0;
-  animation: title-animation 1s .5s ease-in-out backwards;
+  -webkit-animation: title-animation 1s .5s ease-in-out backwards;
+          animation: title-animation 1s .5s ease-in-out backwards;
 }
 
 .header__title__sub {
   margin: 0;
   color: #000;
-  animation: subtitle-animation 1s .7s ease-in-out backwards;
+  -webkit-animation: subtitle-animation 1s .7s ease-in-out backwards;
+          animation: subtitle-animation 1s .7s ease-in-out backwards;
 }
 
 .nav {
@@ -55,7 +47,10 @@
   height: 100%;
   margin: 10px 0;
   list-style-type: none;
+  -webkit-transition: -webkit-transform .5s ease-in-out;
+  transition: -webkit-transform .5s ease-in-out;
   transition: transform .5s ease-in-out;
+  transition: transform .5s ease-in-out, -webkit-transform .5s ease-in-out;
 }
 
 .nav__list {
@@ -111,7 +106,10 @@
   width: 35px;
   height: 25px;
   margin: 40px;
-  user-select: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
   z-index: 100;
   display: none;
 }
@@ -126,8 +124,15 @@
   position: relative;
   height: 3px;
   width: 100%;
+  -webkit-transition: background-color 0.6s ease-in-out,
+    -webkit-transform 0.3s ease-in-out;
+  transition: background-color 0.6s ease-in-out,
+    -webkit-transform 0.3s ease-in-out;
   transition: transform 0.3s ease-in-out,
     background-color 0.6s ease-in-out;
+  transition: transform 0.3s ease-in-out,
+    background-color 0.6s ease-in-out,
+    -webkit-transform 0.3s ease-in-out;
 }
 
 .hamburger__line::after,
@@ -138,8 +143,15 @@
   height: 3px;
   position: absolute;
   left: 0;
+  -webkit-transition: background-color 0.2s ease-in-out,
+    -webkit-transform 0.4s ease-in-out;
+  transition: background-color 0.2s ease-in-out,
+    -webkit-transform 0.4s ease-in-out;
   transition: transform 0.4s ease-in-out,
     background-color 0.2s ease-in-out;
+  transition: transform 0.4s ease-in-out,
+    background-color 0.2s ease-in-out,
+    -webkit-transform 0.4s ease-in-out;
 }
 
 .hamburger__line::after {
@@ -155,17 +167,20 @@
 }
 
 .hamburger__toggle:checked+.hamburger .hamburger__line:before {
-  transform: translateY(10px) rotate(45deg);
+  -webkit-transform: translateY(10px) rotate(45deg);
+          transform: translateY(10px) rotate(45deg);
   background-color: #fff;
 }
 
 .hamburger__toggle:checked+.hamburger .hamburger__line:after {
-  transform: translateY(-10px) rotate(-45deg);
+  -webkit-transform: translateY(-10px) rotate(-45deg);
+          transform: translateY(-10px) rotate(-45deg);
   background-color: #fff;
 }
 
 .hamburger__toggle:checked~.nav {
-  transform: translateX(-300px);
+  -webkit-transform: translateX(-300px);
+          transform: translateX(-300px);
 }
 
 @media screen and (max-width: 1300px) {
@@ -175,7 +190,21 @@
   }
 }
 
-@media screen and (max-width: 1150px) {
+@media screen and (max-width: 1150px) and (min-width:750px) {
+  .header{
+    height: 25vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 750px) {
   .hamburger {
     display: flex;
     flex-direction: column;
@@ -276,4 +305,4 @@
   100% {
     transform: translateX(0px);
   }
-}
+} 
