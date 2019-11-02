@@ -34,94 +34,52 @@
     </label>
     <nav class="nav">
       <ul class="nav__list">
-        <li><a href="create.html">Create event</a></li>
-        <li><a href="findevents.html">Find event</a></li>
-        <li><a href="myevents.html">Reviw your events</a></li>
-        <li><a href="login.html">Log in</a></li>
-        <li><a href="signup.html">Sign up</a></li>
+        <li class="nav__element"><a class="nav__link" href="create.html">Create event</a></li>
+        <li class="nav__element"><a class="nav__link" href="findevents.html">Find event</a></li>
+        <li class="nav__element"><a class="nav__link" href="myevents.html">Reviw your events</a></li>
+        <li class="nav__element"><a class="nav__link" href="login.html">Log in</a></li>
+        <li class="nav__element"><a class="nav__link" href="signup.html">Sign up</a></li>
       </ul>
     </nav>
   </header>
-  <hr>
-  <section class=container id="upper">
-    <h1>Sign up</h1>
-    <form action="" autocomplete="on">
-      <ol>
-        <li>
-          <label>User name
-            <input type="text" name="user_user_name" placeholder="john99" required>
-          </label>
-          <br>
-        </li>
-        <li>
-          <label>Password
-            <input type="password" name="user_password" placeholder="*********" required>
-          </label>
-          <br>
-        </li>
-        <li>
-          <label>Repeat password
-            <input type="password" name="user_password_repeat" required>
-          </label>
-          <br>
-        </li>
-        <li>
-          <label>Favourite color:
-            <input type="color" name="user_color" value="#ff0000">
-          </label>
-          <br>
-        </li>
-        <li>
-          <label>When did you finish secondary school?
-            <input type="month" name="user_month">
-          </label>
-          <br>
-        </li>
-        <li>
-          <label>How much are u interested in sport?
-            0<input type="range" name="user_range" min="0" max="10" step="1" value="5">10
-          </label>
-          <br>
-        </li>
-        <li>
-          <label>I have no idea about what should I ask with search input in personal data form:
-            <input type="search" name="q">
-          </label>
-          <br>
-        </li>
-        <li>
-          <label>Url to your website:
-            <input type="url" name="user_url" placeholder="http://mywebsite.com">
-          </label>
-        </li>
-      </ol>
-      <label>Accept <a href="ftp://speedtest.tele2.net/512KB.zip" download="512KB.zip">regulations</a>
-        <input type="checkbox" value="acceptation">
-      </label>
-      <br><br>
-      <div>
-        <input type="submit" value="Sign up">
-        <input type="reset" value="Clear">
+  <section class="container" id="upper">
+    <h1 class="container__header">Sign up</h1>
+    <form class="form" action="signupNextPage.html" autocomplete="on" method="post">
+      <div class="form__group">
+        <label for="user_name">User name</label>
+        <input id="user_name" class="form__input" type="text" name="user_name" placeholder="user" required>
+      </div>
+      <div class="form__group">
+        <label for="user_password">Password</label>
+        <input id="user_password" class="form__input" type="password" name="user_password" placeholder="*********"
+          required>
+      </div>
+      <div class="form__group">
+        <label for="user_password_repeat">Repeat password</label>
+        <input id="user_password_repeat" class="form__input" type="password" name="user_password_repeat"
+          placeholder="*********" required>
+      </div>
+      <div class="form__buttons">
+        <input class="form__button" type="submit" value="Sign up">
+        <input class="form__button" type="reset" value="Clear">
       </div>
     </form>
   </section>
-  <br>
-  <hr>
-  <footer>
-    <table border="2px">
+  <footer class='footer'>
+    <div class="footer__links">
+      <a href="mailto:meetexpress@gmial.com">Contact us</a>
+      <a href="./img/logo.png" download>Get our logo</a>
+      <a href="upload/html_1.doc" download>Get task</a>
+      <a href="#upper">Upper</a>
+    </div>
+    <table class='footer__table'>
       <tr>
-        <th rowspan="2">&copy Authors:</th>
+        <th rowspan="2">&copy; Authors:</th>
         <td>Michał Wiczk</td>
       </tr>
       <tr>
         <td>Maciek Bartosik</td>
       </tr>
-    </table> <a href="mailto:meetexpress@gmail.com">Contact us</a>
-    <a href="./img/logo.png" download title="Logo">Get our logo</a>
-    <a href="upload/html_1.doc" download>Get task</a>
-    <br>
-    <a href="#title">Upper</a>
+    </table>
   </footer>
 </body>
-
-</html>

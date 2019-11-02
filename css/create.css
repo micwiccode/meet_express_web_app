@@ -26,8 +26,8 @@
 }
 
 .form__group {
-  width: 50%;
-  margin: 10px auto;
+  width: 40%;
+  margin: 5px auto;
   display: flex;
   flex-direction: column;
 }
@@ -57,6 +57,7 @@
 
 .form__group:nth-child(4) * {
   display: inline-block;
+  margin: 6px;
 }
 
 .form__group:nth-child(4) .form__checkbox {

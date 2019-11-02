@@ -1,58 +1,132 @@
 .container {
-  margin-bottom: 400px;
+  margin: 50px auto;
+  margin-bottom: 0;
+  width: 100%;
+  padding: 20%;
+  padding-top: 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url("../img/adult-bar-brainstorming-1015568.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
 }
 
-.form{
-  position: static;
-  float: left;
+.container__header {
+  margin: 30px 0;
+  color: #fff;
+  text-shadow: 2px 2px #5576E3;
+  font-family: 'Fugaz One';
+  font-size: 2em;
+  font-weight: 400;
 }
 
-img{
-  float: left;
+.form {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-p{
-  clear: left;
+.form__group {
+  width: 60%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
 }
 
-p:nth-last-child(2) {
-  line-height: 150px;
-  font-family: "Times New Roman",
-  serif;
-  font-size: 24px;
+.form__group label {
+  font-size: .9em;
+  margin-bottom: 5px;
+  font-weight: 600;
+  color: #fff;
 }
 
-.form__label:first-child{
-  font-weight: bold;
+.form__group:last-of-type {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  justify-content: center;
+  text-shadow: 2px 2px #5576E3;
 }
 
-.form__label:nth-of-type(2) {
-  font-style: italic;
-  border: #111 solid 10px;
+.form__group:last-of-type .form__input {
+  cursor: pointer;
+  margin: 5px;
+  width: 15px;
+  height: 15px;
+  background-color: #fff;
+  color: #5576E3;
+  border: 2px blue solid;
 }
 
-label:last-of-type {
-   font-variant: small-caps;
+.form__input {
+  width: 100%;
+  margin-bottom: 20px;
+  border: none;
+  border-bottom: 2px hsla(226, 72%, 61%, 50%) solid;
+  padding: 10px;
+  font-size: 1.1em;
+}
+
+.form__button {
+  width: 150px;
+  margin: 40px 20px;
+  font-weight: 700;
+  font-size: 1.1em;
+  text-align: center;
+  border: none;
+  border: #5576E3 2px solid;
+  background: #fff;
+  color: #5576E3;
+  padding: 15px;
+  -webkit-transition: color .5s ease-in-out,
+    background-color .5s ease-in-out;
+  transition: color .5s ease-in-out,
+    background-color .5s ease-in-out;
+}
+
+.form__button:hover {
+  background-color: #5576E3;
+  color: #fff;
+}
+
+.form__button:active {
+  outline: none;
 }
 
 .form__input:focus {
-  border-color: lawngreen;
+  border-bottom-color: hsla(226, 72%, 61%, 100%);
 }
 
-.form__label:not(:empty) {
-  background-color: blue;
+@media screen and (max-width: 1300px) {
+  .container {
+    padding: 10%;
+  }
+
+  .form__group {
+    width: 90%;
+  }
+
+  .form__button {
+    width: 100px;
+    margin: 20px 10px;
+  }
 }
 
-#form__checkbox:focus{
-  background-color: lawngreen;
+@media screen and (max-width: 600px) {
+  .container {
+    padding: 5%;
+  }
+
+  .form__group {
+    width: 100%;
+  }
+
+  .form__button {
+    width: 100px;
+    margin: 20px 10px;
+  }
 }
-
-input[type=text]:enabled {
-  background: #ffff00;
-}
-
-*:required{
-  border-color: lightseagreen;
-}
-
-

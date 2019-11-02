@@ -1,0 +1,112 @@
+.container {
+  margin: 50px 0;
+  margin-bottom: 0;
+  width: 100%;
+  padding: 20%;
+  padding-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url("../img/art-artist-artistic-316466.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+.container__header {
+  margin: 30px 0;
+  color: #5576E3;
+  font-family: 'Fugaz One';
+  font-size: 2em;
+  font-weight: 400;
+}
+
+.form {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form__group {
+  width: 60%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.form__group label {
+  font-size: .9em;
+  margin-bottom: 5px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.form__input {
+  width: 100%;
+  margin-bottom: 20px;
+  border: none;
+  border-bottom: 2px hsla(226, 72%, 61%, 50%) solid;
+  padding: 10px;
+}
+
+.form__button {
+  width: 150px;
+  margin: 40px 20px;
+  font-weight: 700;
+  font-size: 1.1em;
+  text-align: center;
+  border: none;
+  border: #5576E3 2px solid;
+  background: #fff;
+  color: #5576E3;
+  padding: 15px;
+  -webkit-transition: color .5s ease-in-out,
+    background-color .5s ease-in-out;
+  transition: color .5s ease-in-out,
+    background-color .5s ease-in-out;
+}
+
+.form__button:hover {
+  background-color: #5576E3;
+  color: #fff;
+}
+
+.form__button:active {
+  outline: none;
+}
+
+.form__input:focus {
+  border-bottom-color: hsla(226, 72%, 61%, 100%);
+}
+
+@media screen and (max-width: 1300px) {
+  .container {
+    padding: 10%;
+  }
+
+  .form__group {
+    width: 90%;
+  }
+
+  .form__button {
+    width: 100px;
+    margin: 20px 10px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    padding: 5%;
+  }
+
+  .form__group {
+    width: 100%;
+  }
+
+  .form__button {
+    width: 100px;
+    margin: 20px 10px;
+  }
+}

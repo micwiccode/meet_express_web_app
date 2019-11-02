@@ -43,28 +43,22 @@
     </nav>
   </header>
   <section class="container" id="upper">
-    <h1>Log in</h1>
-    <img src="./img/icons8-forgot-password-64.png" alt="login">
-    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum porro asperiores voluptate blanditiis quas nisi
-      cupiditate vitae debitis voluptatibus quam?</p>
-    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum porro asperiores voluptate blanditiis quas nisi
-      cupiditate vitae debitis voluptatibus quam?</p>
+    <h1 class="container__header">Log in</h1>
     <form class="form" method="post" name="login">
-      <label class="form__label">Name
-        <input class="form__input" type="text" name="login" required>
-      </label>
-      <br>
-      <label class="form__label">Password
-        <input class="form__input" type="password" name="password" required>
-      </label>
-      <br>
-      <label class="form__label">Remember me
+      <div class="form__group">
+        <label for="name" class="form__label">User name</label>
+        <input id="name" class="form__input" type="text" name="login" required>
+      </div>
+      <div class="form__group">
+        <label for="password" class="form__label">Password</label>
+        <input id="password" class="form__input" type="password" name="password" required>
+      </div>
+      <div class="form__group">
         <input class="form__input" id="form__checkbox" type="checkbox">
-      </label>
-      <br>
-      <input type="submit" value="Log in">
+        <label class="form__label">Remember me</label> 
+      </div>
+      <input class="form__button" type="submit" value="Log in">
     </form>
-
   </section>
   <footer class='footer'>
     <div class="footer__links">

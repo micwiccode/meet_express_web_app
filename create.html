@@ -65,13 +65,13 @@
       <div class="form__group">
         <label class="form__label">Address
           <label for="city" class="form__label">City</label>
-          <input id="city" class="form__input" type="text" name="event_city">
+          <input id="city" class="form__input" type="text" name="event_city" placeholder="Wrocław">
           <label for="post_code" class="form__label">Post code</label>
-          <input id="post_code" class="form__input" type="text" name="event_post_code">
+          <input id="post_code" class="form__input" type="text" name="event_post_code" pattern="[0-9]{2}\-[0-9]{3}" placeholder="11-222">
           <label for="street_name" class="form__label">Street name</label>
-          <input id="street_name" class="form__input" type="text" name="event_street_name">
+          <input id="street_name" class="form__input" type="text" name="event_street_name" placeholder="Pocztowa Street">
           <label for="street_number" class="form__label">Street number</label>
-          <input id="street_number" class="form__input" type="text" name="event_street_number">
+          <input id="street_number" class="form__input" type="text" name="event_street_number" placeholder="1">
         </label>
       </div>
       <div class="form__group">
@@ -91,7 +91,8 @@
       </div>
       <div class="form__group">
         <label for="description" class="form__label">Short description</label>
-        <textarea id="description" class="form__input" name="event_description" rows="5" cols="45"></textarea>
+        <textarea id="description" class="form__input" name="event_description" rows="5" cols="45"
+          placeholder="Tell us something about you..."></textarea>
       </div>
       <div class="form__buttons">
         <input type="submit" value="Create" class="form__button">
