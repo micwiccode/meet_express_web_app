@@ -46,18 +46,18 @@
     <h1 class="container__header">Log in</h1>
     <form class="form" method="post" name="login">
       <div class="form__group">
-        <label for="name" class="form__label">User name</label>
-        <input id="name" class="form__input" type="text" name="login" required>
+        <label for="login__name" class="form__label">User name</label>
+        <input id="login__name" class="form__input" type="text" name="login" required>
       </div>
       <div class="form__group">
-        <label for="password" class="form__label">Password</label>
-        <input id="password" class="form__input" type="password" name="password" required>
+        <label for="login__password" class="form__label">Password</label>
+        <input id="login__password" class="form__input" type="password" name="password" required>
       </div>
       <div class="form__group">
         <input class="form__input" id="form__checkbox" type="checkbox">
         <label class="form__label">Remember me</label> 
       </div>
-      <input class="form__button" type="submit" value="Log in">
+      <input id="login_confirm" class="form__button" type="button" value="Log in">
     </form>
   </section>
   <footer class='footer'>
@@ -77,6 +77,7 @@
       </tr>
     </table>
   </footer>
+<script src="js/login.js"></script>
 </body>
 
 </html>
