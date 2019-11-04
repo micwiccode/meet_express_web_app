@@ -3,7 +3,7 @@
   top: 0;
   left: 0;
   width: 100%;
-  height: 15vh;
+  height: 20vh;
   padding: 10px 10%;
   background-color: #fff;
   z-index: 2;
@@ -192,7 +192,7 @@
 
 @media screen and (max-width: 1150px) and (min-width:750px) {
   .header{
-    height: 25vh;
+    height: 35vh;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -206,10 +206,19 @@
 
 @media screen and (max-width: 750px) {
   .hamburger {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     margin: 20px;
     margin-top: 40px;
   }
@@ -273,6 +282,16 @@
   }
 }
 
+@-webkit-keyframes logo-animation {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
 @keyframes logo-animation {
   from {
     opacity: 0;
@@ -283,26 +302,60 @@
   }
 }
 
-@keyframes title-animation {
+@-webkit-keyframes title-animation {
   from {
-    transform: translateY(-500px);
+    -webkit-transform: translateY(-500px);
+            transform: translateY(-500px);
   }
 
   to {
-    transform: translateY(0px);
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+}
+
+@keyframes title-animation {
+  from {
+    -webkit-transform: translateY(-500px);
+            transform: translateY(-500px);
+  }
+
+  to {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+}
+
+@-webkit-keyframes subtitle-animation {
+  0% {
+    -webkit-transform: translateX(-800px);
+            transform: translateX(-800px);
+  }
+
+  80% {
+    -webkit-transform: translateX(20px);
+            transform: translateX(20px);
+  }
+
+  100% {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
   }
 }
 
 @keyframes subtitle-animation {
   0% {
-    transform: translateX(-800px);
+    -webkit-transform: translateX(-800px);
+            transform: translateX(-800px);
   }
 
   80% {
-    transform: translateX(20px);
+    -webkit-transform: translateX(20px);
+            transform: translateX(20px);
   }
 
   100% {
-    transform: translateX(0px);
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
   }
 } 

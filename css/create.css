@@ -3,10 +3,18 @@
   margin-bottom: 0;
   width: 100%;
   padding: 5%;
-  padding-top: 50px;
+  padding-top: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(hsl(226, 72%, 61%)), to(deepskyblue));
   background-image: linear-gradient(hsl(226, 72%, 61%), deepskyblue);
 }
 
@@ -20,16 +28,28 @@
 
 .form {
   width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .form__group {
   width: 40%;
   margin: 5px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .form__group label {
@@ -52,7 +72,9 @@
 }
 
 .form__group:nth-child(4) .form__label>label {
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .form__group:nth-child(4) * {
@@ -61,8 +83,11 @@
 }
 
 .form__group:nth-child(4) .form__checkbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-around;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 .form__button {
@@ -98,6 +123,7 @@
 @media screen and (max-width: 1300px) {
   .container {
     padding: 10%;
+    padding-top: 20px;
   }
 
   .form__group {
