@@ -1,15 +1,48 @@
-var events = document.getElementsByClassName("box");
+const events = document.getElementsByClassName('box');
+const button = document.getElementById('randomEvent');
+const findEvent = document.querySelector('.search__input');
+const refresh = document.querySelector('#refresh');
 
-function getRandomEvent() {
-    for (var i = 0; i<events.length; i++) {
-        events[i].style = "";
-    }
-    var randomEvent = Math.floor(Math.random()*5);
-    events[randomEvent].style = "border:10px solid red;";
-    console.log(events[randomEvent].style.border);
-}
+const resetEvents = () => {
+  for (let i = 0; i < events.length; i++) {
+    events[i].classList.remove('choosen__box');
+  }
+};
 
-window.addEventListener('load',  getRandomEvent);
+function getRandomEvent () {
+  resetEvents();
+  const randomEvent = Math.floor(Math.random() * 5);
+  events[randomEvent].classList.add('choosen__box');
+};
 
-button = document.getElementById('randomEvent');
+const getSearchEvent = e => {
+  if (e.keyCode === 13) {
+    const titlesElements = document.querySelectorAll('.box__title');
+    const searchTitle = findEvent.value;
+    const resultEvents = [];
+    const titles = [];
+    titlesElements.forEach(el => {
+      titles.push(el.innerHTML);
+    });
+    titles.forEach((el, i) => {
+      if (el.toUpperCase().includes(searchTitle.toUpperCase())) {
+        resultEvents.push(events[i]);
+      }
+    });
+    resetEvents();
+    resultEvents.forEach(el => el.classList.add('choosen__box'));
+  }
+};
+
+const refreshEvents = (e) => {
+  e.target.innerHTML = 'Done!';
+  resetEvents();
+  setTimeout(() => {
+    e.target.innerHTML = 'Refresh';
+  }, 1000);
+};
+
+window.addEventListener('load', getRandomEvent);
 button.addEventListener('click', getRandomEvent);
+findEvent.addEventListener('keydown', getSearchEvent);
+refresh.addEventListener('click', refreshEvents);

@@ -1,18 +1,28 @@
 @import url("colors.css");
 
 .search {
-  margin: 10px auto;
-  text-align: center;
+  padding-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .search__label {
-  margin: 10px auto;
   color: #5576E3;
   font-size: 1.1em;
 }
 
 .search__input {
-  margin-left: 10px;
   border: none;
   border-bottom: #ddd 2px solid;
   font-size: 1.1em;
@@ -22,13 +32,28 @@
   border-bottom: #5576E3 2px solid;
 }
 
+.search__buttons{
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#randomEvent, #refresh{
+  width: 20%;
+  height: 10%;
+  margin: 30px 20px;
+}
+
 .events {
   margin: 40px 100px;
   display: -ms-grid;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
   -webkit-column-gap: 100px;
-  -moz-column-gap: 100px;
   column-gap: 100px;
   -webkit-row-gap: 60px;
   -moz-row-gap: 60px;
@@ -37,6 +62,9 @@
 
 .box {
   position: relative;
+  -webkit-box-ordinal-group: 1;
+      -ms-flex-order: 0;
+          order: 0;
   min-height: 300px;
   margin-top: 5%;
   padding: 15px;
@@ -70,12 +98,7 @@
   opacity: .6;
 }
 
-.box__button {
-  position: absolute;
-  bottom: 30px;
-  left: 20px;
-  margin-top: 5%;
-  width: 100px;
+.button{
   text-decoration: none;
   font-weight: 700;
   text-align: center;
@@ -84,18 +107,40 @@
   border: #5576E3 2px solid;
   padding: 10px;
   -webkit-transition: color .5s ease-in-out,
-    background-color .5s ease-in-out;
+  background-color .5s ease-in-out;
   transition: color .5s ease-in-out,
-    background-color .5s ease-in-out;
+  background-color .5s ease-in-out;
 }
 
-.box__button:hover {
+.button:hover {
   color: #fff;
   background-color: #5576E3;
+}
+
+.box__button {
+  position: absolute;
+  bottom: 30px;
+  left: 20px;
+  margin-top: 5%;
+  width: 100px;
+}
+
+.choosen__box{
+  border: 3px #5576E3 solid;
+  -webkit-box-ordinal-group: 0;
+      -ms-flex-order: -1;
+          order: -1;
 }
 
 @media only screen and (max-width: 700px) {
   .events {
     margin: 20px;
+  }
+
+  #randomEvent,
+  #refresh {
+    width: 40%;
+    height: 20%;
+    margin: 30px 20px;
   }
 }

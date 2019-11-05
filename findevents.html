@@ -15,6 +15,7 @@
     <link rel="stylesheet" type='text/css' href="./css/header.css">
     <link rel="stylesheet" type='text/css' href="./css/footer.css">
     <link rel="stylesheet" type='text/css' href="./css/findevents.css">
+    <script src='./js/hamburger.js' defer></script>
 </head>
 
 <body>
@@ -35,7 +36,8 @@
         <nav class="nav">
             <ul class="nav__list">
                 <li class="nav__element"><a class="nav__link" href="create.html">Create event</a></li>
-                <li class="nav__element nav__element--active"><a class="nav__link" href="findevents.html">Find event</a></li>
+                <li class="nav__element nav__element--active"><a class="nav__link" href="findevents.html">Find event</a>
+                </li>
                 <li class="nav__element"><a class="nav__link" href="myevents.html">Reviw your events</a></li>
                 <li class="nav__element"><a class="nav__link" href="login.html">Log in</a></li>
                 <li class="nav__element"><a class="nav__link" href="signup.html">Sign up</a></li>
@@ -44,11 +46,14 @@
     </header>
     <section class="container" id="upper">
         <div class="search">
-            <label class="search__label" style="margin: 10px auto; color:  #5576E3; font-size: 1.1em;">Search &#128270;:
+            <label class="search__label">Search &#128270;:
                 <input class="search__input" type="search" placeholder="Search event" />
             </label>
+            <div class="search__buttons">
+                <button id="refresh" class="button">Refresh</button>
+                <button id="randomEvent" class="button">Choose random event</button>
+            </div>
         </div>
-        <button id="randomEvent">Choose random event</button>
         <div class="events">
             <div class="box">
                 <div class="box__info">
@@ -59,7 +64,7 @@
                 <div class="box__botoom">
                     <h3 class="box__members">3/30</h3>
                     <form method="#">
-                        <button class="box__button" type="submit">Take part in</button>
+                        <button class="box__button button" type="submit">Take part in</button>
                     </form>
                 </div>
             </div>
@@ -72,7 +77,7 @@
                 <div class="box__botoom">
                     <h3 class="box__members">9/10</h3>
                     <form method="#">
-                        <button class="box__button" type="submit">Take part in</button>
+                        <button class="box__button button" type="submit">Take part in</button>
                     </form>
                 </div>
             </div>
@@ -85,7 +90,7 @@
                 <div class="box__botoom">
                     <h3 class="box__members">29/40</h3>
                     <form method="#">
-                        <button class="box__button" type="submit">Take part in</button>
+                        <button class="box__button button" type="submit">Take part in</button>
                     </form>
                 </div>
             </div>
@@ -98,7 +103,7 @@
                 <div class="box__botoom">
                     <h3 class="box__members">1/15</h3>
                     <form method="#">
-                        <button class="box__button" type="submit">Take part in</button>
+                        <button class="box__button button" type="submit">Take part in</button>
                     </form>
                 </div>
             </div>
@@ -111,7 +116,7 @@
                 <div class="box__botoom">
                     <h3 class="box__members">1/15</h3>
                     <form method="#">
-                        <button class="box__button" type="submit">Take part in</button>
+                        <button class="box__button button" type="submit">Take part in</button>
                     </form>
                 </div>
             </div>
@@ -134,7 +139,7 @@
             </tr>
         </table>
     </footer>
-<script src="js/findevents.js"></script>
+    <script src="js/findevents.js"></script>
 </body>
 
 </html>
