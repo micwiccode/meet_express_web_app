@@ -48,6 +48,12 @@
   margin: 30px 20px;
 }
 
+#find{
+  padding: 10px 50px;
+  font-size: 1.1em;
+  margin-left: 10px;
+}
+
 .events {
   margin: 40px 100px;
   display: -ms-grid;

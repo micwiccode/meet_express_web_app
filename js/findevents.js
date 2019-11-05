@@ -1,6 +1,7 @@
 const events = document.getElementsByClassName('box');
 const button = document.getElementById('randomEvent');
 const findEvent = document.querySelector('.search__input');
+const find = document.querySelector('#find');
 const refresh = document.querySelector('#refresh');
 
 const resetEvents = () => {
@@ -9,16 +10,16 @@ const resetEvents = () => {
   }
 };
 
-function getRandomEvent () {
+function getRandomEvent() {
   resetEvents();
   const randomEvent = Math.floor(Math.random() * 5);
   events[randomEvent].classList.add('choosen__box');
-};
+}
 
-const getSearchEvent = e => {
-  if (e.keyCode === 13) {
+const getSearchEvent = () => {
+  const searchTitle = findEvent.value;
+  if (searchTitle) {
     const titlesElements = document.querySelectorAll('.box__title');
-    const searchTitle = findEvent.value;
     const resultEvents = [];
     const titles = [];
     titlesElements.forEach(el => {
@@ -34,7 +35,7 @@ const getSearchEvent = e => {
   }
 };
 
-const refreshEvents = (e) => {
+const refreshEvents = e => {
   e.target.innerHTML = 'Done!';
   resetEvents();
   setTimeout(() => {
@@ -44,5 +45,10 @@ const refreshEvents = (e) => {
 
 window.addEventListener('load', getRandomEvent);
 button.addEventListener('click', getRandomEvent);
-findEvent.addEventListener('keydown', getSearchEvent);
+findEvent.addEventListener('keydown', e => {
+  if (e.keyCode === 13) {
+    getSearchEvent();
+  }
+});
+find.addEventListener('click', getSearchEvent);
 refresh.addEventListener('click', refreshEvents);
