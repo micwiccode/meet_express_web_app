@@ -11,9 +11,7 @@ function checkLogin () {
     if (unsuccessfulLoginCounter >= 3) {
       let isPerson = false;
       do {
-        isPerson =
-          window.prompt('If you are not a robot please write "I love JS"') ===
-          'I love JS';
+          isPerson = 1337 === Math.round(parseFloat(window.prompt('If you are not a robot please write number which rounded gives 1337')));
       } while (!isPerson);
     } else {
       window.alert('Permission denied');

@@ -45,7 +45,7 @@
   </header>
   <section class="container" id="upper">
     <h1 class="container__header">Sign up</h1>
-    <form class="form" action="signupNextPage.html" autocomplete="on" method="post">
+    <form id="signup__form" class="form" action="signupNextPage.html" autocomplete="on" method="post">
       <div class="form__group">
         <label for="name">Name</label>
         <input id="name" class="form__input" type="text" name="user_name" placeholder="John" required autofocus>
@@ -67,6 +67,11 @@
         <label for="email" class="form__label">E-mail</label>
         <input id="email" class="form__input" type="email" name="user-email" placeholder="john.coppper@gmial.com"
         required>
+      </div>
+      <div class="form__group">
+        <label for="age" class="form__label">Age</label>
+        <input id="age" class="form__input" type="text" name="user-age"
+               required>
       </div>
       <div class="form__group">
         <label for="month" class="form__label">Month of birth</label>
@@ -92,7 +97,7 @@
         required />
       </div>
       <div class="form__buttons">
-        <input class="form__button" type="submit" value="Next">
+        <input id="next" class="form__button" type="button" value="Next">
         <input class="form__button" type="reset" value="Clear">
       </div>
       </div>
@@ -115,6 +120,7 @@
       </tr>
     </table>
   </footer>
+<script src="js/signup.js"></script>
 </body>
 
 </html>
