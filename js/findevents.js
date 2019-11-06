@@ -10,7 +10,7 @@ const resetEvents = () => {
   }
 };
 
-function getRandomEvent() {
+function getRandomEvent () {
   resetEvents();
   const randomEvent = Math.floor(Math.random() * 5);
   events[randomEvent].classList.add('choosen__box');

@@ -81,6 +81,7 @@
   background: #fff;
   color: #5576E3;
   padding: 15px;
+  text-decoration: none;
   -webkit-transition: color .5s ease-in-out,
     background-color .5s ease-in-out;
   transition: color .5s ease-in-out,

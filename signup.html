@@ -45,7 +45,8 @@
   </header>
   <section class="container" id="upper">
     <h1 class="container__header">Sign up</h1>
-    <form id="signup__form" class="form" action="signupNextPage.html" autocomplete="on" method="post">
+    <form id="signup__form" name="signup__form" class="form" action="signupNextPage.html" autocomplete="on"
+      method="post">
       <div class="form__group">
         <label for="name">Name</label>
         <input id="name" class="form__input" type="text" name="user_name" placeholder="John" required autofocus>
@@ -70,7 +71,7 @@
       </div>
       <div class="form__group">
         <label for="age" class="form__label">Age</label>
-        <input id="age" class="form__input" type="text" name="user-age"
+        <input id="age" class="form__input" type="text" name="user-age" value="0"
                required>
       </div>
       <div class="form__group">
