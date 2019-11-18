@@ -16,7 +16,9 @@
     <link rel="stylesheet" type='text/css' href="./css/footer.css">
     <link rel="stylesheet" type='text/css' href="./css/findevents.css">
     <script src='./js/generateEvents.js' defer></script>
+    <script src="./js/findevents.js" defer></script>
     <script src='./js/hamburger.js' defer></script>
+    <script src='./js/cssOnDemand.js' defer></script>
 </head>
 
 <body>
@@ -49,15 +51,37 @@
         <div class="search">
             <label class="search__label">Search &#128270;:
                 <input class="search__input" type="search" placeholder="Search event" />
-                 <button id="find" class="button">Find</button>
+                <button id="find" class="button">Find</button>
             </label>
             <div class="search__buttons">
                 <button id="refresh" class="button">Refresh</button>
                 <button id="randomEvent" class="button">Choose random event</button>
             </div>
+            <div class="customize">
+                <label>
+                    Customize border's color:
+                    <input type="color" id="back_color" value="#5576E3">
+                </label>
+                &nbsp;&nbsp;&nbsp;
+                <label>
+                    Customize font's color:
+                    <input type="color" id="font_color" value="#5576E3">
+                </label>
+                &nbsp;&nbsp;&nbsp;
+                <label>
+                    Change font-family:
+                    <select id="font_family">
+                        <option>Arial</option>
+                        <option>Serif</option>
+                        <option>Monospace</option>
+                    </select>
+                </label>
+                &nbsp;&nbsp;&nbsp;
+                <button id="apply_style" class="button">Apply styles</button>
+            </div>
         </div>
         <div class="events">
-            
+
         </div>
     </section>
     <footer class='footer'>
@@ -77,7 +101,6 @@
             </tr>
         </table>
     </footer>
-    <script src="js/findevents.js"></script>
 </body>
 
 </html>

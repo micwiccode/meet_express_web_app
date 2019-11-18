@@ -1,5 +1,5 @@
 class Event {
-  constructor(date, title, place, membersActual, membersMax) {
+  constructor (date, title, place, membersActual, membersMax) {
     this.date = date;
     this.title = title;
     this.place = place;
@@ -93,3 +93,71 @@ const generateEvents = () => {
 };
 
 document.body.onload = generateEvents();
+
+/*
+<div class="box">
+                <div class="box__info">
+                    <h5 class="box__date">Wed, 30.10.2019r.</h5>
+                    <h2 class="box__title">Trip in mountains</h2>
+                    <h4 class="box__place">Zakopane Wielka 12 Street</h4>
+                </div>
+                <div class="box__botoom">
+                    <h3 class="box__members">3/30</h3>
+                    <form method="#">
+                        <button class="box__button button" type="submit">Take part in</button>
+                    </form>
+                </div>
+            </div>
+            <div class="box">
+                <div class="box__info">
+                    <h5 class="box__date">Thu, 24.10.2019r.</h5>
+                    <h2 class="box__title">Football match</h2>
+                    <h4 class="box__place">Wrocław, Wybrzeże Stanisława Wyspiańskiego 27 Street</h4>
+                </div>
+                <div class="box__botoom">
+                    <h3 class="box__members">9/10</h3>
+                    <form method="#">
+                        <button class="box__button button" type="submit">Take part in</button>
+                    </form>
+                </div>
+            </div>
+            <div class="box">
+                <div class="box__info">
+                    <h5 class="box__date">Sun, 27.10.2019r.</h5>
+                    <h2 class="box__title">LOL tournament</h2>
+                    <h4 class="box__place">Wrocław, Kamienna 1 street</h4>
+                </div>
+                <div class="box__botoom">
+                    <h3 class="box__members">29/40</h3>
+                    <form method="#">
+                        <button class="box__button button" type="submit">Take part in</button>
+                    </form>
+                </div>
+            </div>
+            <div class="box">
+                <div class="box__info">
+                    <h5 class="box__date">Mon, 28.10.2019r.</h5>
+                    <h2 class="box__title">Volleyball</h2>
+                    <h4 class="box__place">Wrocław, Chełmońskiego 10 Street</h4>
+                </div>
+                <div class="box__botoom">
+                    <h3 class="box__members">1/15</h3>
+                    <form method="#">
+                        <button class="box__button button" type="submit">Take part in</button>
+                    </form>
+                </div>
+            </div>
+            <div class="box">
+                <div class="box__info">
+                    <h5 class="box__date">Thu, 31.10.2019r.</h5>
+                    <h2 class="box__title">Halloween Party</h2>
+                    <h4 class="box__place">Wrocław, St Nicolas 47 Street</h4>
+                </div>
+                <div class="box__botoom">
+                    <h3 class="box__members">1/15</h3>
+                    <form method="#">
+                        <button class="box__button button" type="submit">Take part in</button>
+                    </form>
+                </div>
+            </div>
+            */
