@@ -94,6 +94,7 @@ const generateEvents = () => {
 
 document.body.onload = generateEvents();
 
+
 /*
 <div class="box">
                 <div class="box__info">

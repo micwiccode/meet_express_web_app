@@ -25,4 +25,7 @@ for (var j =0; j<deleteButtons.length; j++)
     })
 }
 
+alert("Watch out! You have " + document.images.length + " image, " + document.links.length + " links and " + document.forms.length + ' forms on this site');
+
+
 
