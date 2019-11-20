@@ -5,7 +5,7 @@ function checkLogin () {
   const login = document.getElementById('login__name').value;
   const password = document.getElementById('login__password').value;
   if (login === 'admin' && password === 'admin') {
-    document.writeln('Successful login');
+    document.forms.namedItem('login').submit();
   } else {
     unsuccessfulLoginCounter++;
     if (unsuccessfulLoginCounter >= 3) {
@@ -20,3 +20,14 @@ function checkLogin () {
 }
 
 button.addEventListener('click', checkLogin);
+
+const form = document.getElementById('login__form');
+
+form.addEventListener('focus', (event) => {
+  event.target.style.background = 'red';
+}, true);
+
+form.addEventListener('blur', (event) => {
+  event.target.style.background = '';
+}, true);
+
