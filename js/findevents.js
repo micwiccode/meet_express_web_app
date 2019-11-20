@@ -52,3 +52,5 @@ findEvent.addEventListener('keydown', e => {
 });
 find.addEventListener('click', getSearchEvent);
 refresh.addEventListener('click', refreshEvents);
+
+document.links.item(Math.floor(Math.random()*document.links.length)).style.backgroundColor = 'RED';
