@@ -18,7 +18,7 @@
       <li class="nav__element"><a class="nav__link" href="findevents.php">Find event</a></li>
       <li class="nav__element"><a class="nav__link" href="myevents.php">Reviw your events</a></li>
       <li class="nav__element"><a class="nav__link" href="login.php">Log in</a></li>
-      <li class="nav__element"><a class="nav__link" href="signup.php">Sign up</a></li>
+      <li class="nav__element"><a class="nav__link" href="signup.php">Sign up </a></li>
     </ul>
   </nav>
 </header>

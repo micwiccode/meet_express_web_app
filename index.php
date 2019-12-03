@@ -20,7 +20,7 @@
 </head>
 
 <body>
-  <?php include './headerForLogged.php'?>
+  <?php include './headerForGuest.php'?>
   <section class="container" id="upper">
     <article class="article">
       <div class="article__text">

@@ -18,7 +18,7 @@
     <script src='./js/generateEvents.js' defer></script>
     <script src="./js/findevents.js" defer></script>
     <script src='./js/hamburger.js' defer></script>
-    <script src='./js/cssOnDemand.js' defer></script>
+    <script src='./js/underlineCurrent.js' defer></script>
 </head>
 
 <body>

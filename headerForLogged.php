@@ -17,7 +17,7 @@
       <li class="nav__element"><a class="nav__link" href="create.php">Create event</a></li>
       <li class="nav__element"><a class="nav__link" href="findevents.php">Find event</a></li>
       <li class="nav__element"><a class="nav__link" href="myevents.php">Reviw your events</a></li>
-      <li class="nav__element"><a class="nav__link" href="login.php">Log out</a></li>
+      <li class="nav__element"><a class="nav__link" href="#">Log out</a></li>
     </ul>
   </nav>
 </header>
