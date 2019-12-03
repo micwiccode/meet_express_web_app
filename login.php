@@ -16,33 +16,11 @@
   <link rel="stylesheet" type='text/css' href="./css/footer.css">
   <link rel="stylesheet" type='text/css' href="./css/login.css">
   <script src='./js/hamburger.js' defer></script>
+  <script src='./js/login.js' defer></script>
 </head>
 
 <body>
-  <header class="header">
-    <a class="header__link" href="index.html">
-      <div class="header__box">
-        <img class="header__img" src="img/logo.png" alt="Logo">
-        <div class="header__title">
-          <h1 class="header__title__main">Meet Express </h1>
-          <h3 class="header__title__sub">Meet, Enjoy And Befriend</h3>
-        </div>
-      </div>
-    </a>
-    <input id="hamburger__toggle" type="submit" class="hamburger__toggle" />
-    <label class="hamburger" for="hamburger__toggle">
-      <span class="hamburger__line"></span>
-    </label>
-    <nav class="nav">
-      <ul class="nav__list">
-        <li class="nav__element"><a class="nav__link" href="create.html">Create event</a></li>
-        <li class="nav__element"><a class="nav__link" href="findevents.html">Find event</a></li>
-        <li class="nav__element"><a class="nav__link" href="myevents.html">Reviw your events</a></li>
-        <li class="nav__element nav__element--active"><a class="nav__link" href="login.html">Log in</a></li>
-        <li class="nav__element"><a class="nav__link" href="signup.html">Sign up</a></li>
-      </ul>
-    </nav>
-  </header>
+  <?php include './headerForGuest.php'?>
   <section class="container" id="upper">
     <h1 class="container__header">Log in</h1>
     <form id="login__form" class="form" method="post" name="login">
@@ -61,24 +39,7 @@
       <input id="login__confirm" class="form__button" type="button" value="Log in">
     </form>
   </section>
-  <footer class='footer'>
-    <div class="footer__links">
-      <a href="mailto:meetexpress@gmial.com">Contact us</a>
-      <a href="./img/logo.png" download>Get our logo</a>
-      <a href="upload/html_1.doc" download>Get task</a>
-      <a href="#upper">Upper</a>
-    </div>
-    <table class='footer__table'>
-      <tr>
-        <th rowspan="2">&copy; Authors:</th>
-        <td>Michał Wiczk</td>
-      </tr>
-      <tr>
-        <td>Maciek Bartosik</td>
-      </tr>
-    </table>
-  </footer>
-<script src="js/login.js"></script>
+  <?php include './footer.php'?>
 </body>
 
 </html>

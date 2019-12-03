@@ -16,35 +16,11 @@
     <link rel="stylesheet" type='text/css' href="./css/footer.css">
     <link rel="stylesheet" type='text/css' href="./css/myevents.css">
     <script src='./js/hamburger.js' defer></script>
+    <script src=',/js/myevents.js' defer></script>
 </head>
 
 <body>
-    <header class="header">
-        <a class="header__link" href="index.html">
-            <div class="header__box">
-                <img class="header__img" src="img/logo.png" alt="Logo">
-                <div class="header__title">
-                    <h1 class="header__title__main">Meet Express </h1>
-                    <h3 class="header__title__sub">Meet, Enjoy And Befriend</h3>
-                </div>
-            </div>
-        </a>
-        <input id="hamburger__toggle" type="checkbox" class="hamburger__toggle" />
-        <label for="hamburger__toggle" class="hamburger">
-            <span class="hamburger__line"></span>
-        </label>
-        <nav class="nav">
-            <ul class="nav__list">
-                <li class="nav__element"><a class="nav__link" href="create.html">Create event</a></li>
-                <li class="nav__element"><a class="nav__link" href="findevents.html">Find event</a></li>
-                <li class="nav__element nav__element--active"><a class="nav__link" href="myevents.html">Reviw your
-                        events</a>
-                </li>
-                <li class="nav__element"><a class="nav__link" href="login.html">Log in</a></li>
-                <li class="nav__element"><a class="nav__link" href="signup.html">Sign up</a></li>
-            </ul>
-        </nav>
-    </header>
+    <?php include './hamburgerForGuest.php'?>
     <section class="container">
         <p class="container__title">On this site you can review your all events. Enjoy your memories &#128071;</p>
         <div class="events">
@@ -92,24 +68,7 @@
             </div>
         </div>
     </section>
-    <footer class='footer'>
-        <div class="footer__links">
-            <a href="mailto:meetexpress@gmial.com">Contact us</a>
-            <a href="./img/logo.png" download>Get our logo</a>
-            <a href="upload/html_1.doc" download>Get task</a>
-            <a href="#upper">Upper</a>
-        </div>
-        <table class='footer__table'>
-            <tr>
-                <th rowspan="2">&copy; Authors:</th>
-                <td>Michał Wiczk</td>
-            </tr>
-            <tr>
-                <td>Maciek Bartosik</td>
-            </tr>
-        </table>
-    </footer>
-<script src="js/myevents.js"></script>
+ <?php include './footer.php'?>
 </body>
 
 </html>

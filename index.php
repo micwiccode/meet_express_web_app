@@ -16,31 +16,11 @@
   <link rel="stylesheet" type='text/css' href="./css/footer.css">
   <link rel="stylesheet" type='text/css' href="./css/index.css">
   <script src='./js/hamburger.js' defer></script>
+  <script src='./js/underlineCurrent.js' defer></script>
 </head>
 
 <body>
-  <header class="header">
-    <div class="header__box">
-      <img class="header__img" src="img/logo.png" alt="Logo">
-      <div class="header__title">
-        <h1 class="header__title__main">Meet Express </h1>
-        <h3 class="header__title__sub">Meet, Enjoy And Befriend</h3>
-      </div>
-    </div>
-    <input id="hamburger__toggle" type="checkbox" class="hamburger__toggle" />
-    <label for="hamburger__toggle" class="hamburger">
-      <span class="hamburger__line"></span>
-    </label>
-    <nav class="nav">
-      <ul class="nav__list">
-        <li class="nav__element"><a class="nav__link" href="create.html">Create event</a></li>
-        <li class="nav__element"><a class="nav__link" href="findevents.html">Find event</a></li>
-        <li class="nav__element"><a class="nav__link" href="myevents.html">Reviw your events</a></li>
-        <li class="nav__element"><a class="nav__link" href="login.html">Log in</a></li>
-        <li class="nav__element"><a class="nav__link" href="signup.html">Sign up</a></li>
-      </ul>
-    </nav>  
-  </header>
+  <?php include './headerForLogged.php'?>
   <section class="container" id="upper">
     <article class="article">
       <div class="article__text">
@@ -50,7 +30,7 @@
           the best time of your life.
         </p>
         <div class="article__button">
-          <a href="signup.html">Find it out</a>
+          <a href="signup.php">Find it out</a>
         </div>
       </div>
       <img class="article__img" src="./img/backlit-bright-dawn-697243.jpg" alt="main-photo">
@@ -63,7 +43,7 @@
           Watch the list of the events and find the most proper for you! Do it now!
         </p>
         <div class="article__button">
-          <a href="findevents.html">Check events</a>
+          <a href="findevents.php">Check events</a>
         </div>
       </div>
       <img class="article__img" src="./img/chatting-dog-faces-745045.jpg" alt="main-photo">
@@ -77,29 +57,13 @@
           Let's create your first event!
         </p>
         <div class="article__button">
-          <a href="create.html">Create event</a>
+          <a href="create.php">Create event</a>
         </div>
       </div>
       <img class="article__img" src="./img/backlit-dawn-friends-862848.jpg" alt="main-photo">
     </article>
   </section>
-  <footer class='footer'>
-    <div class="footer__links">
-      <a href="mailto:meetexpress@gmial.com">Contact us</a>
-      <a href="./img/logo.png" download>Get our logo</a>
-      <a href="upload/html_1.doc" download>Get task</a>
-      <a href="#upper">Upper</a>
-    </div>
-    <table class='footer__table'>
-      <tr>
-        <th rowspan="2">&copy; Authors:</th>
-        <td>Michał Wiczk</td>
-      </tr>
-      <tr>
-        <td>Maciek Bartosik</td>
-      </tr>
-    </table>
-  </footer>
+  <?php include './footer.php'?>
 </body>
 
 </html>
