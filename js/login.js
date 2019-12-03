@@ -21,13 +21,4 @@ function checkLogin () {
 
 button.addEventListener('click', checkLogin);
 
-const form = document.getElementById('login__form');
-
-form.addEventListener('focus', (event) => {
-  event.target.style.background = 'red';
-}, true);
-
-form.addEventListener('blur', (event) => {
-  event.target.style.background = '';
-}, true);
 

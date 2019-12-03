@@ -10,7 +10,7 @@ const resetEvents = () => {
   }
 };
 
-function getRandomEvent () {
+function getRandomEvent() {
   resetEvents();
   const randomEvent = Math.floor(Math.random() * 5);
   events[randomEvent].classList.add('choosen__box');
@@ -52,5 +52,3 @@ findEvent.addEventListener('keydown', e => {
 });
 find.addEventListener('click', getSearchEvent);
 refresh.addEventListener('click', refreshEvents);
-
-document.links.item(Math.floor(Math.random()*document.links.length)).style.backgroundColor = 'RED';
