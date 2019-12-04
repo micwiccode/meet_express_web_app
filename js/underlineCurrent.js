@@ -1,9 +1,7 @@
 const headerLinks = document.querySelectorAll('.nav__element');
-console.log(headerLinks);
 
 let path = window.location.pathname;
 path = path.substring(path.lastIndexOf('/') + 1);
-console.log(path);
 
 const deleteUndeline = () => {
   headerLinks.forEach(link => link.classList.remove('nav__element--active'));
