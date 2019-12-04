@@ -17,11 +17,11 @@
   </label>
   <nav class="nav">
     <ul class="nav__list">
-        <li class="nav__element"><a class="nav__link" href="<? echo current($menu)?>">Create event</a></li>
-        <li class="nav__element"><a class="nav__link" href="<? echo next($menu)?>">Find event</a></li>
-        <li class="nav__element"><a class="nav__link" href="<? echo next($menu)?>">Reviw your events</a></li>
-        <li class="nav__element"><a class="nav__link" href="<? echo next($menu)?>">Log out</a></li>
-        <? reset($menu)?>
+        <li class="nav__element"><a class="nav__link" href="<?php echo current($menu)?>">Create event</a></li>
+        <li class="nav__element"><a class="nav__link" href="<?php echo next($menu)?>">Find event</a></li>
+        <li class="nav__element"><a class="nav__link" href="<?php echo next($menu)?>">Reviw your events</a></li>
+        <li class="nav__element"><a class="nav__link" href="<?php echo next($menu)?>">Log out</a></li>
+        <?php reset($menu)?>
 
     </ul>
   </nav>
