@@ -1,4 +1,7 @@
 <header class="header">
+    <?php
+    $menu = array("create.php", "findevents.php", "myevents.php", "php/logoutScript.php");
+    ?>
   <a class="header__link" href="index.php">
     <div class="header__box">
       <img class="header__img" src="img/logo.png" alt="Logo">
@@ -14,10 +17,12 @@
   </label>
   <nav class="nav">
     <ul class="nav__list">
-      <li class="nav__element"><a class="nav__link" href="create.php">Create event</a></li>
-      <li class="nav__element"><a class="nav__link" href="findevents.php">Find event</a></li>
-      <li class="nav__element"><a class="nav__link" href="myevents.php">Reviw your events</a></li>
-      <li class="nav__element"><a class="nav__link" href="login.php">Log out</a></li>
+        <li class="nav__element"><a class="nav__link" href="<? echo current($menu)?>">Create event</a></li>
+        <li class="nav__element"><a class="nav__link" href="<? echo next($menu)?>">Find event</a></li>
+        <li class="nav__element"><a class="nav__link" href="<? echo next($menu)?>">Reviw your events</a></li>
+        <li class="nav__element"><a class="nav__link" href="<? echo next($menu)?>">Log out</a></li>
+        <? reset($menu)?>
+
     </ul>
   </nav>
 </header>

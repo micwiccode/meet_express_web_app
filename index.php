@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+<?php session_start();?>
 
 <head>
   <meta charset="UTF-8">
@@ -20,8 +21,7 @@
 </head>
 
 <body>
-  <?php include './headerForLogged.php'?>
-  <?php include 'php/login.php'?>
+  <?php include './header.php'?>
   <section class="container" id="upper">
     <article class="article">
       <div class="article__text">

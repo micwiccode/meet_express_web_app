@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+<?php session_start();?>
 
 <head>
   <meta charset="UTF-8">
@@ -16,14 +17,14 @@
   <link rel="stylesheet" type='text/css' href="./css/footer.css">
   <link rel="stylesheet" type='text/css' href="./css/login.css">
   <script src='./js/hamburger.js' defer></script>
-  <script src='./js/login.js' defer></script>
 </head>
 
 <body>
-  <?php include './headerForGuest.php'?>
+<?php //include 'php/loginScript.php' ?>
+<?php include './header.php'?>
   <section class="container" id="upper">
     <h1 class="container__header">Log in</h1>
-    <form id="login__form" class="form" method="post" name="login">
+    <form id="login__form" class="form" method="post" name="login" action="php/loginScript.php">
       <div class="form__group">
         <label for="login__name" class="form__label">User name</label>
         <input id="login__name" class="form__input" type="text" name="login" required>
@@ -36,7 +37,7 @@
         <input class="form__input" id="form__checkbox" type="checkbox">
         <label class="form__label">Remember me</label> 
       </div>
-      <input id="login__confirm" class="form__button" type="button" value="Log in">
+      <input id="login__confirm" class="form__button" type="submit" value="Log in">
     </form>
   </section>
   <?php include './footer.php'?>

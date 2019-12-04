@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+<?php session_start();?>
 
 <head>
   <meta charset="UTF-8">
@@ -19,10 +20,14 @@
 </head>
 
 <body>
-  <?php include './headerForGuest.php'?>
+<?php include './header.php'?>
+<?php $age = (int)$_POST['user-age'];
+$age++;
+echo " Twój wiek za \"rok\" to $age"
+?>
   <section class="container" id="upper">
     <h1 class="container__header">Sign up</h1>
-    <form class="form" action="signupNextPage.php" autocomplete="on" method="post">
+    <form class="form" action="php/signup.php" autocomplete="on" method="post">
       <div class="form__group">
         <label for="user_name">User name</label>
         <input id="user_name" class="form__input" type="text" name="user_name" placeholder="user" required>

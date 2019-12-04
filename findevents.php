@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+<?php session_start();?>
 
 <head>
     <meta charset="UTF-8">
@@ -22,7 +23,7 @@
 </head>
 
 <body>
-    <?php include './headerForGuest.php'?>
+<?php include './header.php'?>
     <section class="container" id="upper">
         <div class="search">
             <label class="search__label">Search &#128270;:

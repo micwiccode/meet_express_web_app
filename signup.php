@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+<?php session_start();?>
 
 <head>
   <meta charset="UTF-8">
@@ -20,7 +21,7 @@
 </head>
 
 <body>
-  <?php include './headerForGuest.php'?>
+<?php include './header.php'?>
   <section class="container" id="upper">
     <h1 class="container__header">Sign up</h1>
     <form id="signup__form" name="signup__form" class="form" action="signupNextPage.php" autocomplete="on"

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+<?php session_start();?>
 
 <head>
   <meta charset="UTF-8">
@@ -19,7 +20,7 @@
 </head>
 
 <body>
-  <?php include './headerForGuest.php'?>
+<?php include './header.php'?>
   <section class="container" id="upper">
     <h1 class="container__header">Create event</h1>
     <form class="form" action="#">
