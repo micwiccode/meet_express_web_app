@@ -1,7 +1,6 @@
 <?php
 
-echo isset($_SESSION['connected']);
-if(isset($_SESSION['connected'])){
+if(isset($_SESSION['logged'])){
     include 'headerForLogged.php';
 }
 else{

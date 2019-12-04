@@ -15,7 +15,7 @@ try{
         $stmt = $pdo->query($query);
 
         if($stmt->rowCount()>0){
-            $_SESSION['connected']=true;
+            $_SESSION['logged']=true;
         }
         $stmt->closeCursor();
 

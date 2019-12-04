@@ -12,7 +12,7 @@ if (preg_match('^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}$^', $password) && $password
         $query = "INSERT INTO `users`(`Username`, `Password`) VALUES ('$username','$password')";
         $count = $pdo->exec($query);
         if($count>0){
-            $_SESSION['connected']=true;
+            $_SESSION['logged']=true;
         }
     } catch (PDOException $e) {
         echo $e->getMessage();
