@@ -1,6 +1,6 @@
 <?php
 session_start();
-include "env.php";
+include 'env.local.php';
 
 try{
     $pdo = new PDO('mysql:host='.getenv('DB_HOST').';dbname='.getenv("DB_NAME"), getenv("DB_USERNAME"), getenv("DB_PASSWORD") );
