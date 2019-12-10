@@ -7,4 +7,9 @@ Dane logowania do strony: login `admin` hasło `admin1`
 
 Żeby szybko zabić bazę danych uruchom skrypt `/down.php`
 
-Jeśli chcesz skorzytać z bazy na serwerze zamień we wszystkich plikach `include 'env.local.php'` na `include 'env.php'`
+Jeśli chcesz zmienić dane logowania do bazy na serwerze bądź na dane lokalną uruchom odpowiednio skrypt:
+```php
+php _dev\serverEnv.php
+
+php _dev\localEnv.php
+```
