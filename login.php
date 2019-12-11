@@ -19,7 +19,6 @@
   <link rel="stylesheet" type='text/css' href="./css/footer.css">
   <link rel="stylesheet" type='text/css' href="./css/login.css">
   <script src='./js/hamburger.js' defer></script>
-  <script src='./js/login.js' defer></script>
   <script src='./js/underlineCurrent.js' defer></script>
 </head>
 

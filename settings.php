@@ -14,7 +14,6 @@ if (isset($_COOKIE['configure'])) {
   $fontColor = "#000";
   $fontFamily = "'Montserrat', sans-serif";
 }
-    var_dump($_COOKIE['configure']);
 ?>
 
 <head>
