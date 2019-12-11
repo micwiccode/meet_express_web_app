@@ -8,7 +8,7 @@
   }
 
   $config = (serialize($config));
-  setcookie('configure', $config, time() + 3600, '/meetexpress');
+  setcookie('configure', $config, time() + 3600, '/');
 
 
   header('Location: ../settings.php');

@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-<?php session_start(); ?>
+<?php if(session_status()!=PHP_SESSION_ACTIVE){
+    session_start();
+}
+?>
 
 <head>
   <meta charset="UTF-8">
@@ -21,7 +24,6 @@
 </head>
 
 <body>
-  <?php //include './php/loginScript.php' ?>
   <?php include './header.php' ?>
   <section class="container" id="upper">
     <h1 class="container__header">Log in</h1>

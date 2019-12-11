@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <?php 
+
 session_start();
+
 if (isset($_COOKIE['configure'])) {
   $config = unserialize($_COOKIE['configure']);
   $backColor = $config['backColor'];
@@ -11,7 +13,9 @@ if (isset($_COOKIE['configure'])) {
   $backColor = "#fff";
   $fontColor = "#000";
   $fontFamily = "'Montserrat', sans-serif";
-} ?>
+}
+    var_dump($_COOKIE['configure']);
+?>
 
 <head>
   <meta charset="UTF-8">

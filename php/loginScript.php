@@ -7,9 +7,6 @@ try{
     if(isset($_POST['login']) && $_POST['password']){
         $login = $_POST['login'];
         $password = $_POST['password'];
-        if($login=='admin' && $login=='admin'){
-            die();
-        }
         $query = "SELECT * FROM  `users` WHERE Username='$login' and Password='$password'";
         $stmt = $pdo->query($query);
         if($stmt->rowCount()>0){
@@ -23,7 +20,6 @@ try{
 }
 
 header('Location: ../index.php');
-
 
 
 
