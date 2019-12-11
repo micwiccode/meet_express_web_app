@@ -1,24 +1,17 @@
 .container {
-  margin: 50px 0;
-  margin-bottom: 0;
+  margin: 50px auto;
+  margin-bottom: 50px;
   width: 100%;
-  padding: 20%;
-  padding-top: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background-image: url("../img/art-artist-artistic-316466.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .container__header {
@@ -29,83 +22,56 @@
   font-weight: 400;
 }
 
-.container__error {
-  background-color: red;
-  color: white;
-  padding: 0px 30px;
-  border-radius: 1em;
-  margin-bottom: 2em;
-}
-
-.form {
+.customize {
   width: 80%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
-.form__group {
-  width: 60%;
-  margin: 0 auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-.form__group label {
-  font-size: .9em;
-  margin-bottom: 5px;
-  font-weight: 600;
-  color: #fff;
-}
-
-.form__input {
-  width: 100%;
-  margin-bottom: 20px;
-  border: none;
-  border-bottom: 2px hsla(226, 72%, 61%, 50%) solid;
-  padding: 10px;
-}
-
-.form__button {
+.customize__button {
   width: 150px;
   margin: 40px 20px;
   font-weight: 700;
-  font-size: 1.1em;
   text-align: center;
   border: none;
   border: #5576E3 2px solid;
   background: #fff;
   color: #5576E3;
   padding: 15px;
-  text-decoration: none;
+  cursor: pointer;
   -webkit-transition: color .5s ease-in-out,
     background-color .5s ease-in-out;
   transition: color .5s ease-in-out,
     background-color .5s ease-in-out;
 }
 
-.form__button:hover {
+.customize__label{
+  margin-bottom: 2%;
+}
+
+.customize__label * {
+  margin-left: 20px;
+}
+
+
+.customize__button:hover {
   background-color: #5576E3;
   color: #fff;
 }
 
-.form__button:active {
+.customize__button:active {
   outline: none;
 }
 
-.form__input:focus {
+.customize__input:focus {
   border-bottom-color: hsla(226, 72%, 61%, 100%);
 }
 

@@ -1,5 +1,6 @@
-.container{
-  margin-top: 12%;
+.container__welcome{
+  width: 100%;
+  text-align: center;
 }
 
 .article {

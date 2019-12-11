@@ -30,6 +30,14 @@
   font-weight: 400;
 }
 
+.container__error {
+  background-color: red;
+  color: white;
+  padding: 0px 30px;
+  border-radius: 1em;
+  margin-bottom: 2em;
+}
+
 .form {
   width: 80%;
   display: -webkit-box;
@@ -114,6 +122,7 @@
     background-color .5s ease-in-out;
   transition: color .5s ease-in-out,
     background-color .5s ease-in-out;
+    cursor: pointer;
 }
 
 .form__button:hover {

@@ -1,18 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-<?php session_start();?>
+<?php
+session_start();
+?>
 
 <head>
   <meta charset="UTF-8">
-  <meta name="description"
-    content="Meet Express application, a new way of connecting and meeting people. Create a new evenets, take part in the events in your nearby.">
+  <meta name="description" content="Meet Express application, a new way of connecting and meeting people. Create a new evenets, take part in the events in your nearby.">
   <meta name="keywords" content="meet, get to know, events">
   <meta name="author" content="Michał Wiczk, Maciej Bartosik">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Meet Express</title>
   <link href="https://fonts.googleapis.com/css?family=Fugaz+One&display=swap" rel="stylesheet">
-  <link rel="stylesheet" type='text/css' href="./css/wrapper.css">
+  <?php include './wrapper.php'; ?>
   <link rel="stylesheet" type='text/css' href="./css/header.css">
   <link rel="stylesheet" type='text/css' href="./css/footer.css">
   <link rel="stylesheet" type='text/css' href="./css/index.css">
@@ -21,8 +22,13 @@
 </head>
 
 <body>
-  <?php include './header.php'?>
+  <?php include './header.php' ?>
   <section class="container" id="upper">
+    <div class="container__welcome">
+      <?php if (isset($_SESSION["userName"])) : ?>
+        <h1><?php echo 'Welcome ' . $_SESSION["userName"] ?></h1>
+      <?php endif; ?>
+    </div>
     <article class="article">
       <div class="article__text">
         <h2 class="article__title">The best way to meet friends</h2>
@@ -64,7 +70,7 @@
       <img class="article__img" src="./img/backlit-dawn-friends-862848.jpg" alt="main-photo">
     </article>
   </section>
-  <?php include './footer.php'?>
+  <?php include './footer.php' ?>
 </body>
 
 </html>

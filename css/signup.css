@@ -10,11 +10,11 @@
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   background-image: url("../img/art-artist-artistic-316466.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -30,6 +30,14 @@
   font-weight: 400;
 }
 
+.container__error {
+  background-color: red;
+  color: white;
+  padding: 0px 30px;
+  border-radius: 1em;
+  margin-bottom: 2em;
+}
+
 .form {
   width: 80%;
   display: -webkit-box;
@@ -37,11 +45,11 @@
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .form__group {
@@ -52,8 +60,8 @@
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 
 .form__group label {
