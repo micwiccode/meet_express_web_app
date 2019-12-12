@@ -17,8 +17,10 @@ session_start();
   <link rel="stylesheet" type='text/css' href="./css/header.css">
   <link rel="stylesheet" type='text/css' href="./css/footer.css">
   <link rel="stylesheet" type='text/css' href="./css/index.css">
+  <link rel="stylesheet" type='text/css' href="./css/cookiesbox.css">
   <script src='./js/hamburger.js' defer></script>
   <script src='./js/underlineCurrent.js' defer></script>
+  <script src='./js/cookies.js' defer></script>
 </head>
 
 <body>
@@ -26,7 +28,7 @@ session_start();
   <section class="container" id="upper">
     <div class="container__welcome">
       <?php if (isset($_SESSION["userName"])) : ?>
-        <h1><?php echo 'Welcome ' . $_SESSION["userName"] ?></h1>
+        <h1 class="container__welcome__text"><?php echo 'Welcome ' . $_SESSION["userName"] ?></h1>
       <?php endif; ?>
     </div>
     <article class="article">
@@ -70,6 +72,18 @@ session_start();
       <img class="article__img" src="./img/backlit-dawn-friends-862848.jpg" alt="main-photo">
     </article>
   </section>
+  <?php if (!isset($_COOKIE['notFirstUse'])) : ?>
+    <div class="cookies">
+      <div class="cookies__box">
+        <p class="cookies__box__info">
+          We use cookies to enhance your experience. By continuing to visit this site you agree to our use of cookies.
+        </p>
+      </div>
+      <form method="post" action="./php/cookiesInfo.php">
+        <input type="submit" class="cookies__button" name="select" value="OK" />
+      </form>
+    </div>
+  <?php endif; ?>
   <?php include './footer.php' ?>
 </body>
 

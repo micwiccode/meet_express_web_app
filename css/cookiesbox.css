@@ -1,0 +1,85 @@
+.cookies {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  overflow: auto;
+  width: 20%;
+  background-color: #fff;
+  font-size: 0.8em;
+  border: 3px #5576E3 solid;
+  color: #5576E3;
+  z-index: 1000;
+  animation: cookies-in-animation 1.5s 0s ease-out backwards;
+}
+
+.cookies--clicked {
+  animation: cookies-out-animation 3.5s .1s ease-out forwards;
+}
+
+.cookies__box {
+  width: 80%;
+  height: 70%;
+  margin: 10% auto;
+  text-align: center;
+}
+
+.cookies__box__info {
+  margin: 0;
+}
+
+.cookies__button {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  height: 20%;
+  background-color: #5576E3;
+  color: #fff;
+  border: 0;
+  border-top: 3px #5576E3 solid;
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color .4s ease-in-out,
+    color .4s ease-in-out;
+}
+
+.cookies__button:hover {
+  background-color: #fff;
+  color: #5576E3;
+}
+
+@media screen and (max-width: 1000px) {
+  .cookies {
+    width: 100%;
+    bottom: 0;
+  }
+
+  .cookies__box {
+    height: 10%;
+    margin: 2% auto;
+    text-align: center;
+  }
+}
+
+@keyframes cookies-in-animation {
+  from {
+    -webkit-transform: translateX(2000px);
+    transform: translateX(2000px);
+  }
+
+  to {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+@keyframes cookies-out-animation {
+  from {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+
+  to {
+    -webkit-transform: translateX(2000px);
+    transform: translateX(2000px);
+  }
+}
