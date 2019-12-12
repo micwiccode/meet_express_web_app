@@ -67,7 +67,7 @@
 }
 
 .nav__element:last-child {
-  border: #5576E3 2px solid;
+  border: #5576E3 1px solid;
   border-bottom-color: #5576E3;
   border-radius: 10px;
   -webkit-transition: background-color .4s ease-in-out;
@@ -193,7 +193,7 @@
 
 @media screen and (max-width: 1150px) and (min-width:750px) {
   .header{
-    height: 35vh;
+    height: 30vh;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;

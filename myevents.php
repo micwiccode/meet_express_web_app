@@ -27,6 +27,22 @@ session_start();
     <?php if (isset($_SESSION['logged'])) : ?>
         <section class="container">
             <p class="container__title">On this site you can review your all events. Enjoy your memories &#128071;</p>
+            <div class="group">
+                <div class="group__box">
+                    <label class="group__option">
+                        <input type="radio" name="type" value="all" checked>
+                        <span>All</span>
+                    </label>
+                    <label class="group__option">
+                        <input type="radio" name="type" value="going">
+                        <span>Going to</span>
+                    </label>
+                    <label class="group__option">
+                        <input type="radio" name="type" value="mine">
+                        <span>Created by me</span>
+                    </label>
+                </div>
+            </div>
             <div class="events">
                 <div class="box">
                     <div class="box__info">
