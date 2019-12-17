@@ -18,7 +18,7 @@ session_start();
     <link rel="stylesheet" type='text/css' href="./css/footer.css">
     <link rel="stylesheet" type='text/css' href="./css/myevents.css">
     <script src='./js/hamburger.js' defer></script>
-    <script src=',/js/myevents.js' defer></script>
+    <script src= './js/myevents.js' defer></script>
     <script src='./js/underlineCurrent.js' defer></script>
 </head>
 
