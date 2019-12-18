@@ -37,7 +37,7 @@ session_start();
           the best time of your life.
         </p>
         <div class="article__button">
-          <a href="signup.php">Find it out</a>
+          <a href="userData.php">Find it out</a>
         </div>
       </div>
       <img class="article__img" src="./img/backlit-bright-dawn-697243.jpg" alt="main-photo">

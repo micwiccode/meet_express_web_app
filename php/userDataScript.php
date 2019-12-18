@@ -1,10 +1,9 @@
 <?php
 session_start();
-include 'env.php';
+include 'env.local.php';
 $isValid = true;
-
-$inputs = array("name" =>$_POST['user_name'], "surname"=> $_POST['user_surname'],
- "email" => $_POST['user_email'], "age" =>$_POST['user_age'], "month" => $_POST['user_month'], "phone"=>$_POST['user_phone']);
+$inputs = array("name" =>quotemeta($_POST['user_name']), "surname"=> quotemeta($_POST['user_surname']),
+ "email" => $_POST['user_email'], "age" =>quotemeta($_POST['user_age']), "phone"=>quotemeta($_POST['user_phone']), "sex"=>quotemeta($_POST['user_sex']));
 
 foreach($inputs as $key => $value){
   $value = preg_replace('/\s\s+/', ' ', $value);
@@ -37,13 +36,25 @@ if($isValid){
   }
 }
 
+try{
+    $pdo = new PDO('mysql:host='.getenv('DB_HOST').';dbname='.getenv("DB_NAME"), getenv("DB_USERNAME"), getenv("DB_PASSWORD") );
+    $name = $_SESSION['userName'];
+    $query = "UPDATE users SET name=:name, surname=:surname, sex=:sex, email=:email, age=:age, phone=:phone WHERE username='$name'";
+    $stmt = $pdo->prepare($query);
+    $stmt->execute($inputs);
+    $pdo = null;
+
+}catch(PDOException $e){
+    echo $e->getMessage();
+}
+
 if($isValid){
   session_start();
-  header('Location: ../signupNextPage.php');
+  header('Location: ../index.php');
 }
 else{
   $_SESSION["messageSign"] = $message;
-  header('Location: ../signup.php');
+  header('Location: ../userData.php');
 } 
 
 

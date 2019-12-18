@@ -1,6 +1,6 @@
 <header class="header">
   <?php
-  $menu = array("create.php", "findevents.php", "myevents.php", "settings.php", "php/logoutScript.php");
+  $menu = array("create.php", "findevents.php", "myevents.php", "settings.php", 'userData.php', "php/logoutScript.php");
   ?>
   <a class="header__link" href="index.php">
     <div class="header__box">
@@ -21,7 +21,8 @@
       <li class="nav__element"><a class="nav__link" href="<?php echo next($menu) ?>">Find event</a></li>
       <li class="nav__element"><a class="nav__link" href="<?php echo next($menu) ?>">Reviw your events</a></li>
       <li class="nav__element"><a class="nav__link" href="<?php echo next($menu) ?>">Settings</a></li>
-      <li class="nav__element"><a class="nav__link" href="<?php echo next($menu) ?>">Log out</a></li>
+        <li class="nav__element"><a class="nav__link" href="<?php echo next($menu) ?>">My data</a></li>
+        <li class="nav__element"><a class="nav__link" href="<?php echo next($menu) ?>">Log out</a></li>
       <?php reset($menu) ?>
     </ul>
   </nav>

@@ -1,6 +1,6 @@
 <?php
 session_start();
-include 'env.php';
+include 'env.local.php';
 
 $username = $_POST['user_name'];
 $password = (string)$_POST['user_password'];
@@ -19,13 +19,11 @@ $username = preg_replace('/\s\s+/', ' ', $username);
         } catch (PDOException $e) {
             echo $e->getMessage();
         }
-        header("Location: ../index.php");
+        header("Location: ../userData.php");
     }
     else {
         $_SESSION["messageSign2"] = "Password has to contain number, lowcase and uppercase and min 8 characters";
-        header('Location: ../signupNextPage.php');
+        header('Location: ../signup.php');
     }
 
-
-/** TODO DB new user */
 
