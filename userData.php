@@ -27,7 +27,13 @@
 ?>
   <?php include './header.php' ?>
   <section class="container" id="upper">
-    <h1 class="container__header">My data</h1>
+      <?php $flag = true;
+      if (!empty($user)){
+            $$flag = 'Edit your data';
+      }else{
+          $$flag = 'Register';
+      }?>
+    <h1 class="container__header"><?php echo ${$flag}?></h1>
     <div class="container__error">
       <?php if (isset($_SESSION["messageSign"])) : ?>
         <h5><?php echo $_SESSION["messageSign"] ?></h5>
