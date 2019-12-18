@@ -18,9 +18,9 @@ session_start();
     <link rel="stylesheet" type='text/css' href="./css/footer.css">
     <link rel="stylesheet" type='text/css' href="./css/findevents.css">
     <script src='./js/generateEvents.js' defer></script>
-    <script src="./js/findevents.js" defer></script>
     <script src='./js/hamburger.js' defer></script>
     <script src='./js/underlineCurrent.js' defer></script>
+    <script src="./js/findevents.js" defer></script>
 </head>
 
 <body>

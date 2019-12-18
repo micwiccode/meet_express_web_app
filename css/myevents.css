@@ -1,10 +1,53 @@
-.container__title{
+.container__title {
   text-align: center;
   font-size: 1.1em;
   font-weight: 600;
   padding: 20px;
   padding-top: 50px;
   color: #5576E3;
+}
+
+.group {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.group__box {
+  margin: 10px auto;
+  border: solid 1px #5576E3;
+  display: inline-block;
+  border-radius: 3px;
+  font-size: 0;
+  height: 100%;
+}
+
+.group__option [type="radio"] {
+  display: none;
+}
+
+.group__option span {
+  font-size: 12px;
+  padding: 20px 10px;
+  text-align: center;
+  width: 150px;
+  display: inline-block;
+  transition: background-color .5s;
+  border-right: solid 1px #5576E3;
+  font-weight: 600;
+}
+
+.group__option span:hover {
+  background-color: #eee;
+}
+
+.group__option:last-child span {
+  border-right: none;
+}
+
+.group__option :checked+span {
+  background-color: #5576E3;
+  color: #fff;
 }
 
 .events {
@@ -15,8 +58,8 @@
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 
 .box {
@@ -67,9 +110,9 @@
     background-color .5s ease-in-out;
 }
 
-.box__button--modify{
-   color: rgb(25, 133, 31);
-   border: rgb(25, 133, 31) 2px solid;
+.box__button--modify {
+  color: rgb(25, 133, 31);
+  border: rgb(25, 133, 31) 2px solid;
 }
 
 .box__button--delete {
@@ -94,5 +137,14 @@
   .events {
     margin: 20px;
     margin-bottom: 60px;
+  }
+
+  .group__box {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .group__option span {
+    border-right: none;
   }
 }

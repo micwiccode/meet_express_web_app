@@ -17,7 +17,7 @@ if (isset($_COOKIE['configure'])) {
     margin: 0;
     font-family: <?php echo $fontFamily; ?>;
     min-height: 100vh;
-    padding-top: 18vh;
+    padding-top: 20vh;
     background-color: <?php echo $backColor; ?>;
     color: <?php echo $fontColor; ?>;
   }
@@ -33,7 +33,7 @@ if (isset($_COOKIE['configure'])) {
 
   @media screen and (max-width: 1150px) and (min-width:750px) {
     body {
-      padding-top: 35vh;
+      padding-top: 30vh;
     }
   }
 </style>
